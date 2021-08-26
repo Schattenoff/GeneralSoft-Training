@@ -1,3 +1,99 @@
 body {
-
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #637f83;
+	padding: 0;
+	margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Source Sans Pro;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #637f83;
+	transition: all 0.5s ease;
+}
+
+.nav {
+	height: 100px;
+	background: #FFF;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0px auto;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	padding-top: 33px;
+	font-family: Source Sans Pro;
+	font-weight: 900;
+	font-size: 32px;
+}
+
+.menu {
+	padding-top: 40px;
+	margin-left: 340px;
+	display: flex;
+	font-family: Source Sans Pro;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.menu li {
+ 	padding-left: 50px;
+}
+
+.btn:hover {
+ 	color: #e4551d;	
+}
+
+.offer {
+	background: url(../img/Фон.png) no-repeat;
+	background-size: 100%;
+	height: 100vh;
+}
+
+.offer_block {
+	padding-top: 80px;
+	text-align: center;
+}
+
+.offer_title {
+	font-family: PT Sans;
+	font-size: 40px;
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.offer_text {
+	font-family: Lato;
+	font-size: 16px;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
