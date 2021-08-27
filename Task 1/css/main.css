@@ -399,5 +399,18 @@ span {
 	justify-content: space-between;
 }
 
+.social_text {
+	margin: -1px;
+}
+
+.footer {
+	padding-top: 40px;
+	background: #637f83;
+	color: #FFF;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+
 
 
