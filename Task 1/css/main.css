@@ -74,12 +74,13 @@ a {
 .offer {
 	background: url(../img/Фон.png) no-repeat;
 	background-size: 100%;
-	height: 100vh;
+	height-size: 100%;
 }
 
 .offer_block {
 	padding-top: 80px;
 	text-align: center;
+	padding-bottom: 38px;
 }
 
 .offer_title {
@@ -97,3 +98,64 @@ a {
 	letter-spacing: 0.2em;
 }
 
+.featured {
+
+}
+
+.featured_block {
+	padding-top: 40px;
+ 	text-align: center;
+}
+
+.featured_title {
+	font-size: 34px;
+}
+
+.featured_text {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.featured_content {
+	padding-top: 100px;
+	background: #f6f6f6;
+	padding-bottom: 60px;
+}
+
+.featured_about {
+	display: flex;
+}
+
+.featured_content_block {
+	width: 284px;
+	text-align: center;
+}
+
+.featured_content_title {
+	padding-top: 20px;
+	font-size: 22px;
+}
+
+.featured_content_text {
+	padding-bottom: 20px;
+}
+
+.featured_content_btn {
+	font-size: 16px;
+	font-weight: 700;
+	width: 70px;
+	height: 30px;
+	color: #FFF;
+	background: #637f83;
+	padding: 9px 25px;
+	border-radius: 4px;
+	transition: all 0.5s ease;
+}
+
+.featured_content_btn:hover {
+	color: #e4551d;	
+}
+
+.block-vert-line {
+	border-left:2px solid #d5d5d5;
+}
