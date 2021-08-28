@@ -25,6 +25,7 @@ ul, li{
 a {
 	text-decoration: none;
 	transition: all 0.5s ease;
+	color: #6d6e70;
 }
 
 span {
@@ -32,7 +33,76 @@ span {
 	font-weight: 400;
 }
 
+.nav {
+	height: 80px;
+	background: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .container {
 	max-width: 1020px;
 	margin: 0px auto;
+}
+
+.logo {
+	font-family: 'Nunito', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #6d6e70;
+}
+
+.logo_img {
+	padding-right: 10px;
+}
+
+.logo span {
+	color: #595959;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	padding-left: 90px;
+	text-transform: uppercase;
+}
+
+.menu li {
+	padding-right: 30px;
+}
+
+.menu a:hover {
+	color: #bcda5c;
+}
+
+.login_btn {
+	display: block;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	background: #bcda5c;
+	padding: 8px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	color: #FFF;
+	border: 2px solid #bcda5c;
+	transition: all 0.5s ease;
+}
+
+.login_btn:hover {
+	background: #FFF;
+	color: #bcda5c;
+}
+
+.offer {
+	height: 570px;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100%;
+	height-size: 100%;
 }
