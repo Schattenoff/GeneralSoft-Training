@@ -9,7 +9,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 { 
-
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
 }
 
 * {
@@ -26,11 +28,6 @@ a {
 	text-decoration: none;
 	transition: all 0.5s ease;
 	color: #6d6e70;
-}
-
-span {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
 }
 
 .nav {
@@ -82,7 +79,6 @@ span {
 }
 
 .login_btn {
-	display: block;
 	text-align: center;
 	width: 100px;
 	height: 40px;
@@ -105,4 +101,36 @@ span {
 	background: url(../img/bg.png) no-repeat;
 	background-size: 100%;
 	height-size: 100%;
+	margin-bottom: 30px;
+	color: #FFF;
+	text-align: center;
+	justify-content: center;
+}
+
+.offer_title {
+	padding-top: 170px;
+	font-size: 40px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+.offer_title span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.offer_btn {
+	text-align: center;
+	width: 250px;
+	height: 70px;
+	background: #99c50a;
+	padding: 15px 40px;
+	border-radius: 10px;
+	color: #FFF;
+	border: 2px solid #99c50a;
+	transition: all 0.5s ease;
+}
+
+.offer_btn:hover {
+	border: 2px solid #FFF;
 }
