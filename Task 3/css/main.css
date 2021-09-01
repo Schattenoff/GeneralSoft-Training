@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'Circe-Regular';
+  	src: url(../fonts/circe-regular.ttf) format('ttf'), url(../fonts/circe-regular.woff) format('woff');
+  	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Circe-Extra-Light';
+  	src: url(../fonts/circe-extra-light.ttf) format('ttf'), url(../fonts/circe-extra-light.woff) format('woff');
+  	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Circe-Bold';
+  	src: url(../fonts/circe-bold.ttf) format('ttf'), url(../fonts/circe-bold.woff) format('woff');
+  	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'IntroScriptR';
+  	src: url(../fonts/IntroScriptR-H2Base.ttf) format('ttf'), url(../fonts/IntroScriptR-H2Base.woff) format('woff');
+  	font-weight: 400;
+}
+
+body {
+	font-family: 'Circe-Regular';
+	font-size: 13px;
+	font-weight: 400;
+	background: #fbebea;
+	color: #2e2829;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease;
+	color: #2e2829;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display';
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0px auto;
+}
+
+.logo {
+	font-family: 'Playfair Display';
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: flex-end;
+	padding-top: 65px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu_btn {
+	padding-left: 45px;
+	text-transform: uppercase;
+}
+
+.menu_btn:hover {
+	color: #f50049;
+}
+
+.phone {
+	font-family: 'Circe-Bold';
+	font-size: 15px;
+	padding-left: 225px;
+}
+
+.phone:hover {
+	color: #f50049;
+}
+
+.offer {
+
+}
+
