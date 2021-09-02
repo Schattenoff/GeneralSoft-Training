@@ -23,11 +23,13 @@
 }
 
 body {
-	font-family: 'Circe-Regular';
+	font-family: 'Circe-Regular' sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	background: #fbebea;
 	color: #2e2829;
+	margin:0;
+	padding: 0;
 }
 
 * {
@@ -95,5 +97,59 @@ h1, h2, h3, h4, h5, h6 {
 
 .offer {
 
+  background-image: url(../img/Offer_Cakes.png);
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-position: right 100%;
+}
+
+.offer_block {
+	padding-top: 180px;
+	width: 370px;
+}
+
+.offer_title {
+	font-size: 78px;
+	letter-spacing: 5px;
+}
+
+.offer_text {
+	font-family: 'IntroScriptR';
+	font-size: 41px;
+	margin-top: 10px;
+	padding-bottom: 25px;
+}
+
+.offer_btn {
+	font-family: 'Circe-Regular' sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	background: #f50049;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid #f50049;
+	border-radius: 50px;
+	padding: 18px 65px;
+}
+
+.offer_btn:hover {
+	background: none;
+	color: #f50049;
+}
+
+.offer_icons {
+	padding-top: 140px;
+	display: flex;
+}
+
+.icons_block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 50px;
+}
+
+.icons_text {
+	padding-left: 10px;
 }
 
