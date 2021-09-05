@@ -23,7 +23,7 @@
 }
 
 body {
-	font-family: 'Circe-Regular' sans-serif;
+	font-family: 'Circe-Regular', sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	background: #fbebea;
@@ -96,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .offer {
-
   background-image: url(../img/Offer_Cakes.png);
   background-repeat: no-repeat;
   height: 1000px;
@@ -152,4 +151,169 @@ h1, h2, h3, h4, h5, h6 {
 .icons_text {
 	padding-left: 10px;
 }
+
+.ourcakes {
+	margin-bottom: 100px;
+}
+
+.ourcakes_title {
+	font-size: 40px;
+}
+
+.cakes_block {
+	display: flex;
+	margin-top: 65px;
+}
+
+.classic_cakes {
+	background-image: url(../img/classic_cake.png);
+  	background-repeat: no-repeat;
+  	width: 696px;
+  	transition: all 0.5s ease;
+}
+
+.classic_cakes:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+.block_text {
+	padding-left: 50px;
+	padding-top: 40px;
+}
+
+.cake_title {
+	margin: -1px;
+	font-size: 24px;
+}
+
+.cake_text {
+	margin: -1px;
+	font-size: 20px;
+	opacity: 70%;
+}
+
+.block_show {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 80px;
+	padding-top: 470px;
+	align-items: center;
+}
+
+.show {
+	font-size: 20px;
+}
+
+.arrow {
+	padding-left: 15px;
+	height: 12px;
+	opacity: 70%;
+	transition: all 0.5s ease;
+}
+
+.arrow:hover {
+	opacity: 100%;
+}
+
+.cakes {
+ 	padding-left: 40px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+}
+
+.muss_cake {
+	background-image: url(../img/muss_cake.png);
+  	background-repeat: no-repeat;
+  	width: 484px;
+  	height: 305px;
+  	transition: all 0.5s ease;
+}
+
+.muss_cake:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+
+.block_show-2 {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	padding-top: 160px;
+}
+
+.wedding_cake {
+	background-image: url(../img/wedding_cake.png);
+  	background-repeat: no-repeat;
+  	width: 484px;
+  	height: 305px;
+  	transition: all 0.5s ease;
+}
+
+.wedding_cake:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+.cakes-2 {
+	padding-right: 40px;
+	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+}
+
+.man_cake {
+	background-image: url(../img/man_cake.png);
+  	background-repeat: no-repeat;
+  	width: 484px;
+  	height: 305px;
+  	transition: all 0.5s ease;
+}
+
+.man_cake:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+.woman_cake {
+	background-image: url(../img/woman_cake.png);
+  	background-repeat: no-repeat;
+  	width: 484px;
+  	height: 305px;
+  	transition: all 0.5s ease;
+}
+
+.woman_cake:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+.kids_cake {
+	background-image: url(../img/kids_cake.png);
+  	background-repeat: no-repeat;
+  	width: 697px;
+  	height: 652px;
+}
+
+.kids_cake:hover {
+	box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:3px 8px 17px 0px rgba(0,0,0,0.3);
+}
+
+.block_show-3 {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 80px;
+	padding-top: 510px;
+}
+
+
 
