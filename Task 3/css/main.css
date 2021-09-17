@@ -668,6 +668,11 @@ h1, h2, h3, h4, h5, h6 {
   	outline: none;
  	background: transparent;
  	padding-bottom: 10px;
+ 	transition: all 0.5s ease;
+}
+
+.input:hover {
+	border-bottom: 1px solid #f50049;
 }
 
 .inp-1 {
@@ -701,4 +706,133 @@ h1, h2, h3, h4, h5, h6 {
 	background: url(../img/reviews_illustr.png) no-repeat;
 	background-size: 100%;
 	padding-top: 120px;
+}
+
+.reviews_title {
+	text-align: center;
+	font-size: 40px;
+}
+
+.reviews_mariya_block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.reviews_mariya_content {
+	display: flex;
+	margin-top: 65px;
+}
+
+.photo_mariya {
+	width: 209px;
+	height: 209px;	
+}
+
+.mariya_block_text {
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.mariya_title {
+	font-family: 'Circe-Bold', sans-serif;
+	font-size: 27px;
+}
+
+.mariya_text {
+	font-size: 20px;
+	margin-top: 1px;
+}
+
+.mariya_comments {
+	width: 360px;
+	font-size: 18px;
+}
+
+.mariya_span {
+	color: #f50049;
+	opacity: 70%;
+	cursor: pointer;
+}
+
+.mariya_span:hover {
+	opacity: 100%;
+}
+
+.reviews_numbers {
+	color: #f50049;
+	opacity: 70%;
+	display: flex;
+	font-size: 18px;
+	margin-top: 300px;
+}
+
+.about {
+	padding-top: 200px;
+	display: flex;
+	align-items: center;
+}
+
+.about_title {
+	font-size: 40px;
+}
+
+.about_text {
+	font-family: 'IntroScriptR';
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+.about_content {
+	width: 555px;
+}
+
+.about_content_title {
+	font-family: 'Circe-Bold';
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+
+.about_content_text {
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+.social_network {
+	display: flex;
+}
+
+.inst {
+	padding-right: 20px;
+}
+
+.vk {
+	padding-right: 20px;
+}
+
+.conditer {
+	margin-left: 90px;
+	height: 510px;
+}
+
+.quote {
+	padding-top: 110px;
+	text-align: center;
+}
+
+.quote_text {
+	font-family: 'Playfair Display', sans-serif;
+	font-style: italic;
+	font-size: 25px;
+}
+
+.rosp {
+	height: 73px;
+}
+
+.advantages {
+	background-image: url(../img/advantages_cake1.png);
+	background-repeat: no-repeat;
+	height: 1000px;
+	background-position: left 100%;
 }
