@@ -831,8 +831,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages {
+	padding-top: 140px;
 	background-image: url(../img/advantages_cake1.png);
 	background-repeat: no-repeat;
-	height: 1000px;
+	height: 830px;
 	background-position: left 100%;
+}
+
+.advantages_title {
+	font-size: 40px;
+	text-align: center;
+}
+
+.advantages_text {
+	font-family: 'IntroScriptR';
+	font-size: 35px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.advantages_content_block {
+	margin-top: 140px;
+	display: flex;
+	margin-left: 547px;
+}
+
+.icons_ingr {
+	height: 55px;
+}
+
+.advantages_block {
+	width: 370px;
+	margin-left: 15px;
+}
+
+.advantages_block_title {
+	font-family: 'Circe-Bold';
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.advantages_block_text {
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.care {
+	margin-top: 70px;
+	background-image: url(../img/advantages_cake2.png);
+	background-repeat: no-repeat;
+	height: 802px;
+	background-position: right 100%;
+}
+
+.care_block {
+	padding-top: 340px;
+}
+
+.care_title {
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+
+.care_text {
+	font-family: 'IntroScriptR';
+	font-size: 35px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.care_text2 {
+	font-size: 20px;
+	margin-top: 0px;
 }
