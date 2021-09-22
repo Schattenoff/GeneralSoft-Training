@@ -905,3 +905,69 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 20px;
 	margin-top: 0px;
 }
+
+.how_to_order {
+	background-image: url(../img/how_to_order.png);
+	background-repeat: no-repeat;
+	height: 703px;
+	background-size: 100%;
+	margin-top: 565px;
+}
+
+.how_to_order_content {
+	padding-top: 120px;
+	color: #FFF;
+	margin-left: 750px;
+}
+
+.how_to_order_title {
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+
+.how_to_order_blockcontainer {
+	display: flex;
+}
+
+.how_to_order_number {
+	font-size: 65px;
+}
+
+.how_to_order_block {
+	width: 440px;
+	margin-left: 20px;
+}
+
+.how_to_order_block_title {
+	font-family: 'Circe-Bold';
+	font-size: 21px;
+	margin-bottom: 0px;
+}
+
+.how_to_order_block_text {
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+.contacts {
+	margin-top: 80px;
+	background-image: url(../img/bg_contacts.png);
+	background-repeat: no-repeat;
+	height: 636px;
+	background-position: right 100%;
+}
+
+.contacts_title {
+	font-size: 40px;
+}
+
+.contacts_text {
+	font-family: 'IntroScriptR';
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+.contacts_text2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
