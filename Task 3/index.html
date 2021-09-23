@@ -8,9 +8,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<title>Cakes</title>
 </head>
 	<body>
+		<a href="#" id="scroll_top" title="Наверх"></a>
 		<header class="header">
 			<div class="container">
 				<div class="nav-menu">
@@ -19,37 +21,37 @@
 					</a>
 					<ul class="menu">
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#ourcake" class="menu_btn">
 								Наши торты
 							</a>
 						</li>
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#individual_order" class="menu_btn">
 								Индивиндуальный заказ
 							</a>
 						</li>
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#reviews" class="menu_btn">
 								Отзывы
 							</a>
 						</li>
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#about" class="menu_btn">
 								О нас
 							</a>
 						</li>
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#how_to_order" class="menu_btn">
 								Как заказать
 							</a>
 						</li>
 						<li>
-							<a href="#" class="menu_btn">
+							<a href="#contacts" class="menu_btn">
 								Контакты
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="phone">
+					<a href="tel:+79068999296" class="phone">
 						+7 906 899 92 96
 					</a>
 				</div>
@@ -64,7 +66,7 @@
 						<p class="offer_text">
 							Ручная работа
 						</p>
-						<a href="#" class="offer_btn">
+						<a href="#ourcake" class="offer_btn">
 							Выбрать торт
 						</a>
 					</div>
@@ -89,7 +91,7 @@
 			</div>
 			
 		</header>
-		<section class="ourcakes">
+		<section id="ourcake" class="ourcakes">
 			<div class="container">
 
 				<h1 class="ourcakes_title">
@@ -212,7 +214,7 @@
 			    </div>
 			</div>
 		</section>
-		<section class="individual_order">
+		<section id="individual_order" class="individual_order">
 			<div class="container">
 
 				<h1 class="individual_order_title">
@@ -386,7 +388,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section id="reviews" class="reviews">
 			<div class="container">
 				<h1 class="reviews_title">
 				Отзывы
@@ -450,7 +452,7 @@
 						</a>
 					</div>
 				</div>
-				<img src="img/Conditer.png" alt="Conditer" class="conditer">
+				<img id="about" src="img/Conditer.png" alt="Conditer" class="conditer">
 				</div>
 				<div class="quote">
 					<img src="img/Ковычки.png" alt="Ковычки">
@@ -503,7 +505,7 @@
 					</div>
 				</div>
 		</section>
-		<section class="how_to_order">
+		<section id="how_to_order" class="how_to_order">
 			<div class="container">
 				<div class="how_to_order_content">
 					<h1 class="how_to_order_title">
@@ -553,7 +555,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section id="contacts" class="contacts">
 			<div class="container">
 				<div class="contacts_blocks">
 					<div class="contacts_block-1">
@@ -607,42 +609,42 @@
 					</a>
 					<ul class="footer menu">
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#ourcake" class="footer menu_btn">
 								Наши торты
 							</a>
 						</li>
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#individual_order" class="footer menu_btn">
 								Индивиндуальный заказ
 							</a>
 						</li>
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#reviews" class="footer menu_btn">
 								Отзывы
 							</a>
 						</li>
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#about" class="footer menu_btn">
 								О нас
 							</a>
 						</li>
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#how_to_order" class="footer menu_btn">
 								Как заказать
 							</a>
 						</li>
 						<li>
-							<a href="#" class="footer menu_btn">
+							<a href="#contacts" class="footer menu_btn">
 								Контакты
 							</a>
 						</li>
 					</ul>
 					<div class="footer_social_network">
-						<a href="#" class="footer_inst" target="_blank">
+						<a href="https://instagram.com" class="footer_inst" target="_blank">
 							<img src="img/icons_inst_footer.png" alt="Instagram" class="img_footer_inst">
 						</a>
 
-						<a href="#" class="footer_vk" target="_blank">
+						<a href="https://vk.com/" class="footer_vk" target="_blank">
 							<img src="img/icons_vk_footer.png" alt="VK" class="img_footer_vk">
 						</a>
 					</div>
@@ -653,5 +655,7 @@
 				</p>
 			</div>
 		</footer>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/main.js"></script>	
 	</body>
 </html>
