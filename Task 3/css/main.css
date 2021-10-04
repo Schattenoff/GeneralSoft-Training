@@ -99,8 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 .offer {
   background-image: url(../img/Offer_Cakes.png);
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 941px;
   background-position: right 100%;
+  background-size: contain;
 }
 
 .offer_block {
@@ -170,6 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 .classic_cakes {
 	background-image: url(../img/classic_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;
   	width: 696px;
   	transition: all 0.5s ease;
 }
@@ -229,6 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 .muss_cake {
 	background-image: url(../img/muss_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;
   	width: 484px;
   	height: 305px;
   	transition: all 0.5s ease;
@@ -251,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 .wedding_cake {
 	background-image: url(../img/wedding_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;  
   	width: 484px;
   	height: 305px;
   	transition: all 0.5s ease;
@@ -272,6 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 .man_cake {
 	background-image: url(../img/man_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;
   	width: 484px;
   	height: 305px;
   	transition: all 0.5s ease;
@@ -286,6 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 .woman_cake {
 	background-image: url(../img/woman_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;
   	width: 484px;
   	height: 305px;
   	transition: all 0.5s ease;
@@ -300,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 .kids_cake {
 	background-image: url(../img/kids_cake.png);
   	background-repeat: no-repeat;
+	background-size: contain;
   	width: 697px;
   	height: 652px;
 }
@@ -318,6 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .individual_order {
+
 }
 
 .individual_order_title {
@@ -598,6 +606,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-1 {
 	background-image: url(../img/Ягодноеассорти.png);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 321px;
 	height: 431px;
 }
@@ -621,6 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-2 {
 	background-image: url(../img/Маршмэллоу.png);
 	background-repeat: no-repeat;
+	background-size: contain;
 	width: 321px;
 	height: 431px;
 }
@@ -858,8 +868,11 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.advantages_content_block {
+.advantages_content {
 	margin-top: 140px;
+}
+
+.advantages_content_block {
 	display: flex;
 	margin-left: 547px;
 }
@@ -868,11 +881,19 @@ h1, h2, h3, h4, h5, h6 {
 	height: 55px;
 }
 
+.icons_tort {
+	height: 38px;
+}
+
 .advantages_block {
 	width: 370px;
 	margin-left: 15px;
 }
 
+.advantages_block-2 {
+	width: 370px;
+	margin-left: 10px;
+}
 .advantages_block_title {
 	font-family: 'Circe-Bold';
 	font-size: 20px;
@@ -915,17 +936,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .how_to_order {
-	background-image: url(../img/how_to_order.png);
+	background-image: url(../img/how_to_order-bg.png);
 	background-repeat: no-repeat;
-	height: 703px;
-	background-size: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #DE303A;
+	background-position: 50% 20%;
 	margin-top: 565px;
+	padding-bottom: 100px;
 }
 
 .how_to_order_content {
-	padding-top: 120px;
+	padding-top: 140px;
 	color: #FFF;
-	margin-left: 750px;
+	margin-left: 780px;
 }
 
 .how_to_order_title {
@@ -1113,10 +1137,6 @@ h1, h2, h3, h4, h5, h6 {
 		width: 960px;
 	}
 
-	.header {
-
-	}
-
 	.nav-menu {
 		justify-content: space-between;
 	}
@@ -1129,21 +1149,161 @@ h1, h2, h3, h4, h5, h6 {
 		padding-left: 30px;
 	}
 
-
-	.arrow_r {
-		padding-left: 0px;
+	.offer {
+		height: 841px;
 	}
 
+	.cakes_block {
+		justify-content: space-between;
+	}
+
+	.classic_cakes {
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.muss_cake {
+		width: 400px;
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.wedding_cake {
+		width: 400px;
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.man_cake {
+		width: 400px;
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.woman_cake {
+		width: 400px;
+		background-color: #FFF;
+		background-position: 50% 110%;
+	}
+
+	.kids_cake {
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.arrow_l {
+		padding-right: 60px;
+	}
+
+	.arrow_r {
+		padding-left: 15px;
+	}
+
+	.number {
+		margin-right: 30px;
+	}
+   
+   .size_content_block {
+	   padding-right: 40px;
+	   text-align: center;
+   }
+   
+   .size_content_text {
+	   font-size: 16px;
+	   opacity: 80%;
+   }
+   
+   .circle-1 {
+	   width: 90px;
+	   height: 90px;
+	   background-size: contain;
+   }
+   
+   .circle-2 {
+	   width: 134px;
+	   height: 134px;
+	   background-size: contain;
+   }
+   
+   .circle-3 {
+	   width: 153px;
+	   height: 154px;
+	   background-size: contain;
+   }
+   
+   .circle-4 {
+	   width: 180px;
+	   height: 182px;
+	   background-size: contain;
+   }
+
 	.decoration_content {
-		padding-left: 0px;
+		padding-left: 70px;
+	}
+	
+	.decoration_content_block {
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	.decoration_img {
+		height: 330px;
+		padding-left: 15px;
+	}
+
+	.photo-1 {
+		width: 300px;
+		height: 400px;
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.photo-2 {
+		width: 300px;
+		height: 400px;
+		background-color: #FFF;
+		background-position: 50% 50%;
+	}
+
+	.decoration_content_text {
+		padding-top: 310px;
+	}
+
+	.arrow_le {
+		padding-right: 30px;
 	}
 
 	.arrow_ri {
-		padding-left: 0px;
+		padding-left: 30px;
 	}
 
-	.form {
-		padding-left: 0px;
+	.form_block {
+		margin-right: 40px;
+	}
+
+	.inp-1 {
+		width: 200px;
+	}
+
+	.inp-2 {
+		width: 130px;
+	}
+	
+	.inp-3 {
+		width: 200px;
+	}
+
+	.care {
+		background-position: 125% 50%;
+		background-size: 70%;
+	}
+
+	.how_to_order {
+		background-position: 85% 100%;
+	}
+
+	.how_to_order_content {
+		margin-left: 500px;
 	}
 }
 
