@@ -14,11 +14,17 @@
 	<body>
 		<a href="#" id="scroll_top" title="Наверх"></a>
 		<header class="header">
-			<div class="container">
-				<div class="nav-menu">
+			<div class="nav">
+				<div class="container">
+					<div class="nav-menu">
 					<a href="#" class="logo">
 						Cakes
 					</a>
+					<div class="menu-btn">
+						<div class="menu-btn__burger">
+
+						</div>			
+					</div>
 					<ul class="menu">
 						<li>
 							<a href="#ourcake" class="menu_btn">
@@ -54,6 +60,8 @@
 					<a href="tel:+79068999296" class="phone">
 						+7 906 899 92 96
 					</a>
+				</div>
+				</div>
 				</div>
 			</div>
 						
@@ -234,7 +242,7 @@
 						<a href="">
 							<img src="img/стрелка влево.png" alt="стрелка влево" class="arrow_l">
 						</a>
-						<img src="img/фото начинки.png" alt="Начинка">
+						<img src="img/фото начинки.png" alt="Начинка" class="filling_img">
 
 						<div class="filling_content_block">
 							<p class="filling_content_title">
@@ -395,7 +403,7 @@
 				</h1>	
 				<div class="reviews_mariya_block">
 					<a href="#">
-						<img src="img/стрелка влево.png" alt="Стрлека влево" class="arrow_le">
+						<img src="img/стрелка влево.png" alt="Стрлека влево" class="arrow_left_mar">
 					</a>
 					<div class="reviews_mariya_content">
 						<img src="img/Mariya.png" alt="Photo Mariya" class="photo_mariya">
@@ -412,10 +420,10 @@
 						</div>
 					</div>
 					<a href="#">
-						<img src="img/стрелка вправо.png" alt="Стрлека влево" class="arrow_ri">
+						<img src="img/стрелка вправо.png" alt="Стрлека вправо" class="arrow_right_mar">
 					</a>
 					<p class="reviews_numbers">
-						1/2
+						1/26
 					</p>
 				</div>
 				<div class="about">
@@ -455,7 +463,7 @@
 				<img id="about" src="img/Conditer.png" alt="Conditer" class="conditer">
 				</div>
 				<div class="quote">
-					<img src="img/Ковычки.png" alt="Ковычки">
+					<img src="img/Ковычки.png" alt="Ковычки" class="quotation_marks">
 					<p class="quote_text">
 						Я за простые рецепты. В Италии это называют<br>cucina povera: когда обычные ингредиенты<br>превращаются в божественное блюдо.
 					</p>
@@ -576,9 +584,9 @@
 						Заполните форму ниже и наш кондитер свяжется с Вами
 					</div>
 					<form class="contacts_form">
-						<input type="text" class="contacts_input" name="Имя" placeholder="Ваше имя" required>
-						<input type="email" class="contacts_input" name="Почта" placeholder="Email адрес" required>
-						<input type="text" class="contacts_input"
+						<input type="text" class="contacts_input in-1" name="Имя" placeholder="Ваше имя" required>
+						<input type="email" class="contacts_input in-2" name="Почта" placeholder="Email адрес" required>
+						<input type="text" class="contacts_input in-3"
 						name="Вопрос" placeholder="Ваш вопрос">
 						<button class="contacts_btn">
 							Отправить
@@ -614,7 +622,7 @@
 					<a href="#" class="footer logo">
 						Cakes
 					</a>
-					<ul class="footer menu">
+					<ul class="footer menu-2">
 						<li>
 							<a href="#ourcake" class="footer menu_btn">
 								Наши торты
@@ -657,9 +665,20 @@
 					</div>
 				</div>
 				<hr>
-				<p class="footer_text">
-					©  2018 Cakes
-				</p>
+				<div class="footer_content">
+					<p class="footer_text">
+						©  2018 Cakes
+					</p>
+					<div class="footer_social_network-2">
+						<a href="https://instagram.com" class="footer_inst" target="_blank">
+							<img src="img/icons_inst_footer.png" alt="Instagram" class="img_footer_inst">
+						</a>
+	
+						<a href="https://vk.com/" class="footer_vk" target="_blank">
+							<img src="img/icons_vk_footer.png" alt="VK" class="img_footer_vk">
+						</a>
+					</div>
+				</div>
 			</div>
 		</footer>
 		<script src="js/jquery-3.6.0.min.js"></script>

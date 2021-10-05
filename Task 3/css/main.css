@@ -380,6 +380,11 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right: 90px;
 }
 
+.filling_img {
+	width: 344px;
+	height: 390px;
+}
+
 .filling_content_block {
 	width: 310px;
 	color: #2f2f2f; 
@@ -741,6 +746,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 65px;
 }
 
+.arrow_left_mar {
+	padding-right: 30px;
+}
+.arrow_right_mar {
+	padding-left: 30px;
+}
+
 .photo_mariya {
 	width: 209px;
 	height: 209px;	
@@ -833,6 +845,11 @@ h1, h2, h3, h4, h5, h6 {
 	height: 510px;
 }
 
+.quotation_marks {
+	width: 61px;
+	height: 40px;
+}
+
 .quote {
 	padding-top: 110px;
 	text-align: center;
@@ -845,6 +862,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rosp {
+	width: 179px;
 	height: 73px;
 }
 
@@ -852,7 +870,8 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 140px;
 	background-image: url(../img/advantages_cake1.png);
 	background-repeat: no-repeat;
-	height: 830px;
+	height: 690px;
+	background-size: contain;
 	background-position: left 100%;
 }
 
@@ -911,7 +930,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/advantages_cake2.png);
 	background-repeat: no-repeat;
 	height: 802px;
-	background-position: right 100%;
+	background-position: right 50%;
+	background-size: contain;
 }
 
 .care_block {
@@ -938,12 +958,11 @@ h1, h2, h3, h4, h5, h6 {
 .how_to_order {
 	background-image: url(../img/how_to_order-bg.png);
 	background-repeat: no-repeat;
-	height: 100%;
-	background-size: cover;
+	background-size: contain;
 	background-color: #DE303A;
 	background-position: 50% 20%;
-	margin-top: 565px;
-	padding-bottom: 100px;
+	height: 885px;
+	margin-top: 700px;
 }
 
 .how_to_order_content {
@@ -1066,6 +1085,15 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 }
 
+.menu-2 {
+	display: flex;
+}
+
+.menu-2 li {
+	padding-left: 45px;
+	text-transform: uppercase;
+}
+
 .footer .nav-menu {
 	padding-top: 40px;
 	padding-bottom: 20px;
@@ -1114,6 +1142,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 20px;
 }
 
+.footer_content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 #scroll_top {
 	display: none;
 	position: fixed;
@@ -1129,6 +1163,61 @@ h1, h2, h3, h4, h5, h6 {
 
 #scroll_top:hover {
 	opacity: 100%;
+}
+
+.footer_social_network-2 {
+	display: none;
+}
+
+.menu-btn {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 30px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+	width: 35px;
+	height: 3px;
+	background: #000;
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 3px;
+	background: #000;
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+	transform: translateY(-8px);
+}
+
+.menu-btn__burger::after {
+	transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn__burger {
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
 }
 
 
@@ -1205,7 +1294,6 @@ h1, h2, h3, h4, h5, h6 {
    
    .size_content_block {
 	   padding-right: 40px;
-	   text-align: center;
    }
    
    .size_content_text {
@@ -1294,8 +1382,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.care {
-		background-position: 125% 50%;
-		background-size: 70%;
+
 	}
 
 	.how_to_order {
@@ -1305,12 +1392,629 @@ h1, h2, h3, h4, h5, h6 {
 	.how_to_order_content {
 		margin-left: 500px;
 	}
+
+	#scroll_top {
+		width: 56px;
+		height: 56px;
+		background-size: 100%;
+	}
 }
 
 @media screen and (max-width: 992px) {
 	.container {
 		width: 720px;
 	}
+
+	.nav {
+		height: 60px;
+		background-color: #FFF;
+	}
+
+	.nav-menu {
+		padding-top: 0px;
+		height: 60px;
+		align-items: center;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.offer {
+		height: 641px;
+	}
+
+	.offer_title {
+		font-size: 60px;
+	}
+
+	.offer_text {
+		font-size: 36px;
+	}
+
+	.icons_text {
+		font-size: 14px;
+	}
+
+	.ourcakes {
+		padding-top: 170px;
+	}
+
+	.ourcakes_title {
+		font-size: 28px;
+	}
+
+	.cakes_block {
+		margin-top: 40px;
+	}
+
+	.block_text {
+		padding-left: 25px;
+		padding-top: 25px;
+	}
+
+	.cake_title {
+		font-size: 18px;
+	}
+
+	.cake_text {
+		font-size: 14px;
+	}
+
+	.classic_cakes {
+		width: 420px;
+		height: 390px;
+	}
+
+	.muss_cake {
+		width: 285px;
+		height: 185px;
+	}
+
+	.wedding_cake {
+		width: 285px;
+		height: 185px;
+	}
+
+	.man_cake {
+		width: 285px;
+		height: 185px;
+	}
+
+	.woman_cake {
+		width: 285px;
+		height: 185px;
+	}
+
+	.kids_cake {
+		width: 420px;
+		height: 390px;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	.block_show {
+		padding-top: 270px;
+		padding-right: 60px;
+	}
+
+	.show {
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	.individual_order_title {
+		font-size: 28px;
+	}
+
+	.individual_order_text {
+		font-size: 26px;
+	}
+
+	.block {
+		height: 355px;
+	} 
+
+	.filling_text {
+		width: 90px;
+		height: 65px;
+	}
+
+	.filling_title {
+		font-size: 36px;
+		padding-top: 45px;
+		padding-left: 45px;
+	}
+
+	.filling_title span {
+		font-size: 18px;
+	}
+
+	.filling_content {
+		padding-left: 105px;
+	}
+
+	.filling_img {
+		width: 210px;
+		height: 240px;
+	}
+
+	.filling_content_title {
+		font-size: 18px;
+	}
+
+	.filling_content_text {
+		font-size: 14px;
+	}
+
+	.filling_content_price {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+
+	.filling_content_btn {
+		font-size: 10px;
+		padding: 15px 40px;
+	}
+
+	.number {
+		padding-top: 0px;
+		font-size: 11px;
+	}
+
+	.arrow_l {
+		height: 18px;
+	}
+
+	.arrow_r {
+		height: 18px;
+	}
+
+	.size_title {
+		font-size: 36px;
+		padding-top: 45px;
+		padding-left: 45px;
+	}
+
+	.size_title span {
+		font-size: 18px;
+	}
+
+	.size_content {
+		padding-left: 70px;
+		padding-top: 0px;
+	}
+
+	.circle-1 {
+		width: 78px;
+		height: 78px;
+		font-size: 11px;
+	}
+	
+	.circle-2 {
+		width: 105px;
+		height: 105px;
+		font-size: 11px;
+	}
+	
+	.circle-3 {
+		width: 120px;
+		height: 120px;
+		font-size: 11px;
+	}
+	
+	.circle-4 {
+		width: 138px;
+		height: 138px;
+		font-size: 11px;
+	}
+
+	.size_content_block {
+		padding-right: 35px;
+	}
+
+	.size_content_text {
+		font-size: 12px;
+	}
+
+	.decoration_title {
+		font-size: 36px;
+		padding-top: 25px;
+		padding-left: 45px;
+	}
+
+	.decoration_title span {
+		font-size: 18px;
+	}
+
+	.decoration_img {
+		height: 150px;
+		padding-top: 10px;
+	}
+
+	.arrow_le {
+		height: 18px;
+	}
+
+	.arrow_ri {
+		height: 18px;
+	}
+
+	.decoration_content {
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+
+	.photo-1 {
+		height: 250px;
+		width: 190px;
+	}
+
+	.photo-2 {
+		height: 250px;
+		width: 190px;
+	}
+
+	.decoration_content_text {
+		padding-top: 190px;
+	}
+
+	.decoration_content_title {
+		font-size: 14px;
+	}
+
+	.decoration_content_price {
+		font-size: 14px;
+	}
+
+	.choice_title {
+		padding-top: 0px;
+		padding-left: 45px;
+		font-size: 18px;
+	}
+
+	.form {
+		padding-left: 45px;
+	}
+
+	.form_block {
+		margin-right: 20px;
+	}
+
+	.form_text {
+		font-size: 18px;
+		margin-top: 0px;
+		margin-bottom: 3px;
+	}
+
+	.input {
+		font-size: 12px;
+		padding-bottom: 0px;
+		border-radius: 50px;
+		border: 1px solid rgba(0, 0, 0, .5);
+	}
+
+	.input:hover {
+		border: 1px solid rgba(0, 0, 0, 1);
+	}
+
+	.inp-1 {
+		width: 160px;
+		padding: 2px 28px;
+	}
+
+	.inp-2 {
+		width: 75px;
+		padding: 2px 24px;
+	}
+
+	.inp-3 {
+		width: 160px;
+		padding: 2px 28px;
+	}
+
+	.form_btn {
+		font-size: 10px;
+		padding: 15px 35px;
+		width: 160px;
+		height: 45px;
+	}
+
+	.reviews_title {
+		font-size: 28px;
+	}
+
+	.arrow_left_mar {
+		height: 18px;
+	}
+	.arrow_right_mar {
+		height: 18px;
+	}
+
+	.reviews_mariya_content {
+		margin-top: 30px;
+		align-items: center;
+	}
+
+	.photo_mariya {
+		width: 108px;
+		height: 108px;
+	}
+
+	.mariya_title {
+		font-size: 16px;
+	}
+
+	.mariya_text {
+		font-size: 14px;
+	}
+
+	.mariya_comments {
+		font-size: 14px;
+		width: 245px;
+	}
+
+	.reviews_numbers {
+		margin-top: 0px;
+		font-size: 12px;
+	}
+
+	.mariya_block_text {
+		margin-bottom: 0px;
+		margin-left: 30px;
+	}
+
+	.about {
+		padding-top: 120px;
+	}
+
+	.about_title {
+		font-size: 28px;
+	}
+
+	.about_text {
+		font-size: 26px;
+	}
+
+	.about_content_title {
+		font-size: 15px;
+	}
+
+	.about_content_text {
+		font-size: 14px;
+	}
+
+	.about_content {
+		width: 330px;
+	}
+
+	.conditer {
+		width: 315px;
+		height: 315px;
+	}
+
+	.quote {
+		padding-top: 30px;
+	}
+
+	.quote_text {
+		font-size: 14px;
+	}
+
+	.quotation_marks {
+		width: 35px;
+		height: 22px;
+	}
+
+	.rosp {
+		width: 82px;
+		height: 45px;
+	}
+
+	.advantages {
+		padding-top: 0px;
+		margin-top: 80px;
+		height: 400px;
+	}
+
+	.advantages_title {
+		font-size: 28px;
+	}
+
+	.advantages_text {
+		font-size: 26px;
+	}
+
+	.advantages_content {
+		margin-top: 70px;
+	}
+
+	.advantages_content_block {
+		margin-left: 320px;
+	}
+
+	.advantages_block_title {
+		font-size: 15px;
+	}
+
+	.advantages_block_text {
+		font-size: 14px;
+	}
+
+	.icons_ingr {
+		width: 50px;
+		height: 50px;
+	}
+
+	.icons_tort {
+		width: 63px;
+		height: 40px;
+	}
+
+	.advantages_block {
+		width: 210px;
+	}
+
+	.advantages_block-2 {
+		width: 210px;
+		margin-left: 5px;
+	}
+
+	.care {
+		height: 425px;
+	}
+
+	.care_block {
+		padding-top: 130px;
+	}
+
+	.care_title {
+		font-size: 28px;
+	}
+
+	.care_text {
+		font-size: 26px;
+	}
+
+	.care_text2 {
+		font-size: 14px;
+	}
+
+	.how_to_order {
+		margin-top: 380px;
+		height: 420px;
+	}
+
+	.how_to_order_content {
+		margin-left: 330px;
+		padding-top: 55px;
+	}
+
+	.how_to_order_title {
+		font-size: 28px;
+	}
+
+	.how_to_order_number {
+		font-size: 36px;
+	}
+
+	.how_to_order_block_title {
+		font-size: 15px;
+	}
+
+	.how_to_order_block_text {
+		font-size: 14px;
+	}
+
+	.contacts {
+		margin-top: 50px;
+		height: 580px;
+		background-size: 60%;
+	}
+
+	.contacts_title {
+		font-size: 28px;
+	}
+
+	.contacts_text {
+		font-size: 22px;
+		margin-top: 0px;
+	}
+
+	.contacts_text2 {
+		font-size: 14px;
+		width: 250px;
+	}
+	
+	.contacts_form {
+		width: 350px;
+	}
+	.contacts_input {
+		border: 1px solid #FFF;
+		background: #FFF;
+		font-size: 14px;
+		padding: 20px 10px;
+		margin-top: 10px;
+	}
+
+	.contacts_input:hover {
+		border: 2px solid #2e2829;
+	}
+
+	.in-3 {
+		padding: 20px 10px 100px;
+	}
+
+	.contacts_btn {
+		font-size: 14px;
+		margin-top: 30px;
+		width: 160px;
+		height: 45px;
+	}
+
+	.contacts_t {
+		font-size: 14px;
+	}
+
+	.footer {
+		background: #898989;
+		color: #FFF;
+	}
+
+	.footer_social_network {
+		display: none;
+	}
+
+	.menu-2 li {
+		padding-left: 40px;
+	}
+
+	.footer .menu_btn {
+		font-size: 14px;
+	}
+
+	.footer_social_network-2 {
+		display: flex;
+		margin-left: 30px;
+	}
+
+	.footer_inst {
+		filter: brightness(0) invert(1);
+	}
+
+	.footer_vk {
+		filter: brightness(0) invert(1);	
+	}
+
+	.footer_text {
+		padding-top: 0px;
+		
+	}
+
+	#scroll_top {
+		width: 50px;
+		height: 50px;
+		background-size: 100%;
+	}
+
+	.menu-btn {
+		margin-left: 25px;
+		display: flex;
+	}
+
+	.nav-menu {
+		justify-content: flex-start;
+	}
+
+	.phone {
+		position: absolute;
+		right: 25px;
+	}
+
+
+
 }
 
 @media screen and (max-width: 768px) {
