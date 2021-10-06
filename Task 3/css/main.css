@@ -2016,7 +2016,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	ul.menu {
 		position: absolute;
-		margin-top: 413px;
+		margin-top: 419px;
 		left: 0px;
 		display: flex;
 		flex-direction: column;
@@ -2025,12 +2025,16 @@ h1, h2, h3, h4, h5, h6 {
 		background: #e7e7e7;
 		text-align: center;
 		width: 320px;
-		transition: all 0.5s ease;
+		
 	}
 	.menu li {
 		padding-top: 20px;
 		padding-left: 0px;
 		padding-bottom: 20px;
+		transition: all 0.5s ease;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+		width: 320px;
+		z-index: 1;
 	}
 
 }
@@ -2070,10 +2074,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.filling_content_title {
 		font-size: 16px;
-	}
-
-	.filling_content_text {
-		font-size: 13px;
 	}
 
 	.filling_content_btn {
@@ -2176,4 +2176,327 @@ h1, h2, h3, h4, h5, h6 {
 	.container {
 		width: 90%;
 	}
+
+	.logo {
+		font-size: 16px;
+	}
+
+	.nav-menu {
+		justify-content: space-between;
+	}
+
+	.phone {
+		display: none;
+	}
+
+	.offer {
+		background-image: none;
+		background-size: 150%;
+		background-position: top right;
+		height: 481px;
+	}
+
+	.offer_block {
+		padding-top: 140px;
+		text-align: center;
+		width: auto;
+	}
+
+	.offer_title {
+		font-size: 40px;
+	}
+
+	.offer_text {
+		font-size: 22px;
+	}
+
+	.offer_icons {
+		z-index: -1;
+		flex-direction: column;
+		padding-top: 0px;
+		position: relative;
+		bottom: 185px;
+	}
+
+	.icons_block {
+		position: relative;
+		padding-right: 0px;
+		justify-content: flex-start;
+	}
+
+	.icons_ingr {
+		width: 35px;
+		height: 35px;
+	}
+
+	.icons_dostavka {
+		width: 35px;
+		height: 35px;
+	}
+
+	.icons_br {
+		display: none;
+	}
+
+	.offer_btn {
+		display: block;
+		width: 225px;
+		height: 50px;
+		padding: 15px;
+		margin: 110px auto auto;
+	}
+
+	.ourcakes {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.ourcakes_title {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.cakes_block {
+		margin-top: 0px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cakes-2 {
+		align-items: center;
+		padding-right: 0px;
+	}
+
+	.show {
+		display: none;
+	}
+
+	.block_text {
+		padding-top: 15px;
+		padding-left: 15px;
+	}
+
+	.cake_title {
+		font-size: 14px;
+	}
+
+	.cake_text {
+		font-size: 12px;
+	}
+
+	.cakes {
+		margin-top: 10px;
+		padding-left: 0px;
+	}
+
+	.classic_cakes {
+		margin-top: 30px;
+		width: 280px;
+		height: 120px;
+	}
+
+	.muss_cake {
+		width: 280px;
+		height: 120px;	
+	}
+
+	.wedding_cake {
+		margin-top: 10px;
+		width: 280px;
+		height: 120px;
+	}
+
+	.man_cake {
+		margin-top: 10px;
+		width: 280px;
+		height: 120px;	
+	}
+
+	.woman_cake {
+		margin-top: 10px;
+		width: 280px;
+		height: 120px;	
+	}
+
+	.kids_cake {
+		margin-top: 10px;
+		width: 280px;
+		height: 120px;	
+	}
+
+	.individual_order {
+		margin-top: 40px;
+	}
+
+	.individual_order_title {
+		font-size: 24px;
+	}
+
+	.individual_order_text {
+		font-size: 22px;
+	}
+
+	.filling_text {
+		width: auto;
+	}
+
+	.filling_title {
+		width: auto;
+		font-size: 30px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.filling_title span{
+		font-size: 16px;
+	}
+
+	.block {
+		height: 430px;
+	}
+
+	.filling_content {
+		position: static;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0px;
+	}
+
+	.arrow_l {
+		display: none;
+	}
+
+	.arrow_r {
+		display: none;
+	}
+
+	.filling_img {
+		width: 240px;
+		height: 120px;
+	}
+
+	.filling_content_block {
+		width: auto;
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+	
+	.filling_content_title {
+		margin-top: 0px;
+	}
+
+	.filling_content_text {
+		width: 230px;
+		text-align: left;
+	}
+
+	.filling_content_price {
+		margin-top: 5px;
+		padding-top: 5px;
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 0px;
+		padding-bottom: 5px;
+	}
+
+	.filling_content_btn {
+		display: block;
+		font-size: 13px;
+		width: 170px;
+		margin: auto;
+	}
+
+	.number {
+		display: none;
+	}
+
+	.size_text {
+		width: auto;
+	}
+
+	.size_title {
+		width: auto;
+		font-size: 30px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+
+	.size_title span {
+		font-size: 16px;
+	}
+
+	.mob {
+		display: none;
+	}
+
+	.circle-1 {
+		width: 115px;
+		height: 115px;	
+		font-size: 16px;
+		margin: auto;
+	}
+
+	.size_content_text {
+		font-size: 14px;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.size_content_btn_mobile {
+		display: block;
+    	font-size: 13px;
+     	width: 170px;
+     	margin: auto;
+		padding: 10px 40px;
+		color: #FFF;
+		background: #f50049;
+		text-align: center;
+		text-transform: uppercase;
+		border: 2px solid #f50049;
+		border-radius: 50px;
+		transition: all 0.5s ease;
+		margin-top: 50px;
+	}
+
+	.size_content_btn_mobile:hover {
+		box-shadow:0px 21px 46px 5px rgba(245,0,73,0.25);
+		-webkit-box-shadow:0px 21px 46px 5px rgba(245,0,73,0.25);
+		-moz-box-shadow:0px 21px 46px 5px rgba(245,0,73,0.25);
+	}
+
+	.size_content_block {
+		padding-right: 0px;
+		margin: auto;
+	}
+	
+	.size_content {
+		padding-left: 0px;
+		flex-direction: column;
+	}
+
+	.decoration_title {
+		width: auto;
+		font-size: 30px;
+		padding-top: 10px;
+		padding-left: 20px;
+	}
+
+	.decoration_title span {
+		font-size: 16px;
+	}
+	
+	.decoration_text {
+		font-size: 14px;
+		text-align: center;
+		width: auto;
+	}
+
+	.decoration_content {
+		display: none;
+	}
+
+
+
+
 }
+
