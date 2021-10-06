@@ -324,10 +324,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 510px;
 }
 
-.individual_order {
-
-}
-
 .individual_order_title {
 	font-size: 40px;
 	text-align: center;
@@ -1381,10 +1377,6 @@ h1, h2, h3, h4, h5, h6 {
 		width: 200px;
 	}
 
-	.care {
-
-	}
-
 	.how_to_order {
 		background-position: 85% 100%;
 	}
@@ -1432,12 +1424,16 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 36px;
 	}
 
+	.icons_dostavka {
+		height: 50px;
+	}
+
 	.icons_text {
 		font-size: 14px;
 	}
 
 	.ourcakes {
-		padding-top: 170px;
+		margin-top: 170px;
 	}
 
 	.ourcakes_title {
@@ -1967,8 +1963,13 @@ h1, h2, h3, h4, h5, h6 {
 		display: none;
 	}
 
+	.menu-2 {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.menu-2 li {
-		padding-left: 40px;
+		padding-left: 34px;
 	}
 
 	.footer .menu_btn {
@@ -2013,13 +2014,161 @@ h1, h2, h3, h4, h5, h6 {
 		right: 25px;
 	}
 
-
+	ul.menu {
+		position: absolute;
+		margin-top: 413px;
+		left: 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: #e7e7e7;
+		text-align: center;
+		width: 320px;
+		transition: all 0.5s ease;
+	}
+	.menu li {
+		padding-top: 20px;
+		padding-left: 0px;
+		padding-bottom: 20px;
+	}
 
 }
 
 @media screen and (max-width: 768px) {
 	.container {
 		width: 540px;
+	}
+
+	.logo {
+		font-size: 20px;
+	}
+
+	.offer {
+		height: 581px;
+	}
+
+	.block_show {
+		padding-right: 30px;
+	}
+
+	.filling_title {
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+
+	.filling_content {
+		padding-left: 30px;
+		position: relative;
+		bottom: 35px;
+		left: 20px;
+	}
+
+	.filling_content_block {
+		padding-left: 30px;
+	}
+
+	.filling_content_title {
+		font-size: 16px;
+	}
+
+	.filling_content_text {
+		font-size: 13px;
+	}
+
+	.filling_content_btn {
+		padding: 10px 40px;
+	}
+
+	.size_title {
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+
+	.size_content {
+		padding-left: 60px;
+	}
+
+	.circle-1 {
+		width: 58px;
+		height: 58px;
+	}
+	
+	.circle-2 {
+		width: 74px;
+		height: 74px;
+	}
+	
+	.circle-3 {
+		width: 90px;
+		height: 90px;
+	}
+	
+	.circle-4 {
+		width: 100px;
+		height: 100px;
+	}
+
+	.decoration_title {
+		padding-left: 25px;
+	}
+
+	.decoration_content {
+		position: relative;
+		right: 7px;
+		top: 28px;
+	}
+
+	.decoration_content_text {
+		padding-top: 148px;
+	}
+
+	.photo-1 {
+		height: 200px;
+		width: 140px;
+	}
+
+	.photo-2 {
+		height: 200px;
+		width: 140px;
+	}
+
+	.choice_title {
+		padding-top: 30px;
+	}
+
+	.inp-1 {
+		width: 120px;
+	}
+
+	.inp-2 {
+		width: 60px;
+	}
+
+	.inp-3 {
+		width: 120px;
+	}
+
+	.form_btn {
+		width: 120px;
+		padding: 15px 10px;
+	}
+
+	.advantages_content_block {
+		margin-left: 250px;
+	}
+
+	.how_to_order_content {
+		margin-left: 230px;
+	}
+
+	.contacts_block-2 {
+		margin-left: 30px;
+	}
+
+	.menu-2 li {
+		text-align: center;
+		padding-left: 10px;
 	}
 }
 

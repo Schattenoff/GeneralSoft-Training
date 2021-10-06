@@ -29,10 +29,19 @@ $(function(){
 		if(!menuOpen) {
 			menuBtn.classList.add('open');
 			menuOpen = true;
+			$('ul.menu').show();
 		}
 		else {
 			menuBtn.classList.remove('open');
 			menuOpen = false;
+			$('ul.menu').hide();
 		}
 	});
+	if ($(window).width() <= 992) {
+		$('a[href^="#"').on('click', function() { 
+			menuBtn.classList.remove('open');
+			menuOpen = false;
+			$('ul.menu').hide();
+		});
+	}
 });
