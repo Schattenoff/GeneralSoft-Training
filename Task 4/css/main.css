@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3F8FD2;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.clock_content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border: 20px solid #043C6B;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.point {
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    background-color: #283149;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.clock .hour {
+    color: #595959;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.border  {
+    margin-top: 35px;
+    border: 1px solid #000;
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.hour-1 {
+    transform: rotate(0deg);
+}
+
+.hour-2 {
+    transform: rotate(30deg);
+}
+
+.hour-3 {
+    transform: rotate(60deg);
+}
+
+.hour-4 {
+    transform: rotate(90deg);
+}
+
+.hour-5 {
+    transform: rotate(120deg);
+}
+
+.hour-6 {
+    transform: rotate(150deg);
+}
+
+.hour-7 {
+    transform: rotate(180deg);
+}
+
+.hour-8 {
+    transform: rotate(210deg);
+}
+
+.hour-9 {
+    transform: rotate(240deg);
+}
+
+.hour-10 {
+    transform: rotate(270deg);
+}
+
+.hour-11 {
+    transform: rotate(300deg);
+}
+
+.hour-12 {
+    transform: rotate(330deg);
+}
+
+.brand {
+    position: absolute; 
+    font-size: 18px;
+    text-align: center;
+    left:41%;
+    top:90px;
+}
+
+.minute-hand-wrapper {
+    width: 370px;
+    height: 370px;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border-radius: 50%;
+}
+
+.minute-hand {
+    position: relative;
+}
+
+.minute-hand .hand {
+    width: 4px;
+    height: 185px;
+    background-color: #2d3f70;
+    position: absolute;
+    left: 183px;
+}
+
+.hour-hand-wrapper {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 115px;
+    left: 115px;
+    border-radius: 50%;
+}
+
+.hour-hand {
+    position: relative;
+}
+
+.hour-hand .hand {
+    width: 4px;
+    height: 135px;
+    background-color: #2d3f70;
+    position: absolute;
+    left: 133px;
+}
+
+.second-hand-wrapper {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    border-radius: 50%;
+}
+
+.second-hand {
+    position: relative;
+}
+
+.second-hand .hand {
+    width: 2px;
+    height: 160px;
+    background-color: #FF4040;
+    position: absolute;
+    left: 159px;
+}
