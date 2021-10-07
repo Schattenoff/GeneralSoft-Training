@@ -237,7 +237,7 @@
 						<h2 class="filling_title">01 <span> Выберите начинку</span>
 						</h2>
 					</div>
-					<div class="filling_content">
+					<div class="filling_content" id="filling_content">
 						<a href="">
 							<img src="img/стрелка влево.png" alt="стрелка влево" class="arrow_l">
 						</a>
@@ -253,7 +253,7 @@
 							<p class="filling_content_price">
 								1000 руб/кг
 							</p>
-							<a href="#" class="filling_content_btn">
+							<a href="#size" class="filling_content_btn">
 								Выбрать
 							</a>
 						</div>
@@ -267,7 +267,7 @@
 
 				</div>
 
-				<div class="size block">
+				<div class="size block" id="size">
 					<div class="size_text">
 						<h2 class="size_title">
 						02 <span> Размер</span>
@@ -283,7 +283,7 @@
 							<p class="size_content_text">
 								17-18 см<br>(1 кг – 6 персон)
 							</p>
-							<a href="#" class="size_content_btn_mobile">
+							<a href="#decoration" class="size_content_btn_mobile">
 								Выбрать
 							</a>
 						</div>
@@ -318,7 +318,7 @@
 					</div>
 				</div>
 
-				<div class="decoration block">
+				<div class="decoration block" id="decoration">
 
 					<div class="decoration_container">
 						<div class="decoration_text">
@@ -332,7 +332,7 @@
 						<a href="#">
 							<img src="img/стрелка влево.png" alt="Стрлека влево" class="arrow_le">
 						</a>
-						<div class="decoration_content_block">
+						<div class="decoration_content_block mob">
 							<div class="photo-1">
 								<div class="decoration_content_text">
 									<p class="decoration_content_title">
@@ -357,6 +357,9 @@
 									</div>
 							</div>
 						</div>
+						<a href="#choice" class="decoration_content_btn_mobile">
+							Выбрать
+						</a>
 						<a href="#">
 							<img src="img/стрелка вправо.png" alt="Стрлека влево" class="arrow_ri">
 						</a>
@@ -366,7 +369,7 @@
 					</div>
 					</div>
 					
-					<h2 class="choice_title">
+					<h2 class="choice_title" id="choice">
 						Ваш выбор
 					</h2>
 
@@ -391,9 +394,9 @@
 						 	</p>
 						<input type="text" class="input inp-3">
 						</div>
-						<div class="form_btn">
+						<button onclick="window.location.href='#contacts';" class="form_btn">
 							Заказать торт
-						</div>				
+						</button>				
 					</form>
 				</div>
 			</div>
@@ -433,6 +436,22 @@
 					<h1 class="about_title" id="about">
 					О нас 
 					</h1>
+					<div class="about_block_mob">
+						<img src="img/Conditer.png" alt="Conditer" class="conditer_mob">
+						<div class="social_network_mob">
+							<a href="https://instagram.com" class="inst" target="_blank">
+							<img src="img/icon_instagram.png" alt="Instagram">
+							</a>
+
+							<a href="https://vk.com/" class="vk" target="_blank">
+							<img src="img/icon_vk.png" alt="VK">
+							</a>
+
+							<a href="https://twitter.com/" class="twitter" target="_blank">
+							<img src="img/icon_twitter.png" alt="Twitter">
+							</a>
+						</div>
+					</div>
 					<p class="about_text">
 						О кондитире 
 					</p>
@@ -461,8 +480,8 @@
 						<img src="img/icon_twitter.png" alt="Twitter">
 						</a>
 					</div>
-				</div>
 				<img src="img/Conditer.png" alt="Conditer" class="conditer">
+				</div>
 				</div>
 				<div class="quote">
 					<img src="img/Ковычки.png" alt="Ковычки" class="quotation_marks">
@@ -605,7 +624,7 @@
 						<p class="contacts_t">
 							Мы в соц. сетях:
 						</p>
-						<div class="social_network">
+						<div class="social_network mobile">
 							<a href="https://instagram.com" class="inst" target="_blank">
 							<img src="img/inst_icon_contacts.png" alt="Instagram">
 							</a>
@@ -656,7 +675,10 @@
 							</a>
 						</li>
 					</ul>
-					<div class="footer_social_network">
+					<a href="tel:+79068999296" class="phone_mobile">
+						+7 906 899 92 96
+					</a>
+					<div class="footer_social_network  mo">
 						<a href="https://instagram.com" class="footer_inst" target="_blank">
 							<img src="img/icons_inst_footer.png" alt="Instagram" class="img_footer_inst">
 						</a>
