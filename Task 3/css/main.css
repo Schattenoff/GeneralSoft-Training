@@ -2773,7 +2773,7 @@ h1, h2, h3, h4, h5, h6 {
 		width: auto;
 	}
 
-	.icons_ingr {
+	.icons_ingr.icon_mob{
 		width: 55px;
 		height: 55px;
 	}
@@ -2872,6 +2872,10 @@ h1, h2, h3, h4, h5, h6 {
 		display: inline;
 	}
 
+	.vk-2 {
+		margin-left: 25px;
+	}
+
 	.footer {
 		flex-direction: column;
 		align-items: flex-start;
@@ -2901,7 +2905,6 @@ h1, h2, h3, h4, h5, h6 {
 	.mo {
 		align-items: center;
 	}	
-
 	.footer_social_network-2 {
 		display: none;
 	}
