@@ -4,8 +4,7 @@ var hour = 0;
 
 var day = new Date();
 
-setInterval(
-    function() {
+function Time() {
         day = new Date();
         second = day.getSeconds() * 6;
         minute = day.getMinutes() * 6;
@@ -13,5 +12,6 @@ setInterval(
         document.getElementById("second-hand").style.transform = "rotate(" + second + "deg)";
         document.getElementById("minute-hand").style.transform = "rotate(" + minute + "deg)";
         document.getElementById("hour-hand").style.transform = "rotate(" + hour + "deg)";
-    },1000
-);
+};
+
+Time();

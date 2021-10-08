@@ -125,6 +125,11 @@ body {
     background-color: #2d3f70;
     position: absolute;
     left: 183px;
+    --rotation: 0;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    animation: clock 3600s infinite steps(60);
 }
 
 .hour-hand-wrapper {
@@ -146,6 +151,11 @@ body {
     background-color: #2d3f70;
     position: absolute;
     left: 133px;
+    --rotation: 0;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    animation: clock 43200s infinite steps(60);
 }
 
 .second-hand-wrapper {
@@ -166,5 +176,16 @@ body {
     height: 160px;
     background-color: #FF4040;
     position: absolute;
-    left: 159px;
+    left: 159.4px;
+    --rotation: 0;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotation) * 1deg));
+    animation: clock 60s infinite steps(60);
+}
+
+@keyframes clock{
+    100% {
+       transform: rotateZ(360deg);
+    }
 }
