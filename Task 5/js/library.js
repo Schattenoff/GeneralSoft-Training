@@ -1,4 +1,18 @@
 let Module = (function () {
+
+    const memo = (fn) => {
+        const cache = {};
+
+        return(...arguments) => {
+            if (arguments[0], arguments[1] in cache) {
+                console.log("cache");
+                return cache [arguments[0], arguments[1]];
+            }
+            console.log("new number - write cache");
+            return cache[arguments[0], arguments[1]] = fn(...arguments);
+        }
+    }
+
     return {
         isArray: function(obj) {
             return Array.isArray(obj);
@@ -61,5 +75,9 @@ let Module = (function () {
                 return this;
             }
         },
-    }
+        sum: memo(function(a,b) {
+            let result = a + b;
+            return result;
+        })
+    };
 })();

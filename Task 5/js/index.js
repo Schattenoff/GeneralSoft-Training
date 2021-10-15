@@ -13,3 +13,10 @@ let Tom = new Module.Developer('Tom', '&', 'Middle-Developer');
 let Jerry = new Module.Developer('Jerry', '&', 'Juinor-Developer');
 console.log(Tom);
 console.log(Jerry);
+
+console.log(Module.sum(2,2));
+console.log(Module.sum(2,2));
+
+console.log(Module.sum(4,4));
+console.log(Module.sum(4,4));
+
