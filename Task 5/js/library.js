@@ -45,9 +45,21 @@ let Module = (function () {
                     return false;
                 }
                 return true;
-              }
-              else 
-                return false;
             }
-        }
+            else 
+            return false;
+        },
+        Developer: class {
+            constructor(firstName, lastName, technology) {
+                if (typeof Module.Developer.instance === "object") {
+                    return Module.Developer.instance;
+                }
+                Module.Developer.instance = this;
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.technology = technology;
+                return this;
+            }
+        },
+    }
 })();

@@ -8,3 +8,8 @@ console.log(Module.isFunction(function(){}));
 console.log(Module.isUndefined(undefined));
 console.log(Module.isNaN(NaN));
 console.log(Module.deepEqual(Object, Object));
+
+let Tom = new Module.Developer('Tom', '&', 'Middle-Developer');
+let Jerry = new Module.Developer('Jerry', '&', 'Juinor-Developer');
+console.log(Tom);
+console.log(Jerry);
