@@ -1,3 +1,65 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+}
+
+.nav {
+    background-color: #81C0CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-calendar {
+    height: 100vh;
+}
+
+.navigation_calendar {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 0; 
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
+}
+
+.left {
+    border-right: 30px solid #868686;
+}
+
+.right {
+    border-left: 30px solid #868686;
+}
+
+.year {
+    color: #868686;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
