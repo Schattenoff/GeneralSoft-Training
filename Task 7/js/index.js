@@ -26,7 +26,11 @@ class Circle {
 }
 
 function totalSquare(array) {
-
+    let result = 0;
+    array.forEach(function(item){
+        result += item.square();
+    });
+    return result;
 }
     
     const square = new Square(5);
