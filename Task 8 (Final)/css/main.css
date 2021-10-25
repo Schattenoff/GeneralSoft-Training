@@ -3,8 +3,7 @@ body {
     color: #FFF;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 * {
@@ -35,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation_calendar {
     display: flex;
     align-items: center;
+    width: 410px;
 }
 
 .arrow {
@@ -43,6 +43,11 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     cursor: pointer;
+    opacity: 80%;
+}
+
+.arrow:hover {
+    opacity: 100%;
 }
 
 .left {
@@ -61,5 +66,72 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.select-month {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+    color: #868686;
+    outline: none;
+    border: 2px solid #868686;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calendar-week {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mt-no {
+    margin-top: 0px;
+}
+
+.calendar-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    background-color: #81C0CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+
+.add_events {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #81C0CB;
+    bottom: 30px;
+    right: 220px;
+    cursor: pointer;
+}
+
+.horizontal-plus {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 12.5%;
+    left: 25%;
+    top: 43.75%;
+}
+
+.vertical-plus {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 12.5%;
+    height: 50%;
+    left: 43.75%;
+    top: 12.5%;
+}
+
 
 

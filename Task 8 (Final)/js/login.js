@@ -1,11 +1,15 @@
-let userName = document.getElementById('userName');
 let regLogin = document.getElementById('regLogin');
 let regPass = document.getElementById('regPass');
 
 function userStorage() {
-    localStorage.setItem('userName', userName.value);
-    localStorage.setItem('regLogin', regLogin.value);
-    localStorage.setItem('regPass', regPass.value);
+    let users = {
+        'regLogin': regLogin.value,  
+        'regPass': regPass.value
+    }
+    let user = JSON.parse(localStorage.getItem('users'));
+    if (user == null) user = [];
+    user.push(users);
+    localStorage.setItem('users', JSON.stringify(user));
 }
 
 function check_userStorage() {
@@ -14,10 +18,5 @@ function check_userStorage() {
 
     let login = document.getElementById('login');
     let pass = document.getElementById('pass');
-
-    if (login.value !== loginStorage && pass.value !== passStorage) {
-        alert("ERROR")
-    } else {
-        alert("Welcome!");
-    }
+    
 }
