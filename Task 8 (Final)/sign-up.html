@@ -17,17 +17,29 @@
             <p class="title">
                 Sign Up
             </p>
-            <form class="sign-up_form">
+            <form class="sign-up_form" onsubmit="return false;">
                 <input id="userName" placeholder="Username..." name="name" type="text" class="input"  value="" required>
                 <input id="regLogin" placeholder="Email..." name="email" type="email" class="input" value="" required>
                 <input id="regPass" placeholder="Password..." name="pass" type="password" class="input" value="" required>
-                <button id="rgstr_btn" onclick="userStorage()" class="form_btn">Accept</button>
+                <button id="rgstr_btn" onclick="userStorage()"  class="form_btn">Accept</button>
             </form>
         </div>
         <p class="text">
             Already have an account? Try to <span class="text_span"><a href="sign-in.html" class="text_span"><u>Sign-in</u></a>!</span> 
         </p>
+        <div class="message" style="display: none;">
+            <h1 class="message_title">
+                Error
+            </h1>
+            <p class="message_text">
+                Ошибочка!
+            </p>
+        </div>
     </section>
+
+   
+
 </body>
+<script src="js/helper.js"></script>
 <script src="js/register_user.js"></script>
 </html>
