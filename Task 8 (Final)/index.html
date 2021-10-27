@@ -17,7 +17,7 @@
             <h1>Calendar Application</h1>
             <div class="logout_block">
                 <p class="name">userName</p>
-                <a href="#" class="logout_btn">
+                <a href="sign-in.html" class="logout_btn" onclick="">
                     Logout
                 </a>
             </div>
@@ -26,22 +26,22 @@
     <section class="section-calendar">
         <div class="container">
             <div class="navigation_calendar">
-                <div class="arrow left"></div>
+                <div class="arrow left" onclick="minus()"></div>
                 <p class="year">2021</p>
-                <div class="arrow right"></div>
+                <div class="arrow right" onclick="plus()"></div>
                 <select name="month" id="select-month" class="select-month">
-                    <option value="" class="option-month">Junuary</option>
-                    <option value="" class="option-month">February</option>
-                    <option value="" class="option-month">March</option>
-                    <option value="" class="option-month">April</option>
-                    <option value="" class="option-month">May</option>
-                    <option value="" class="option-month">June</option>
-                    <option value="" class="option-month">July</option>
-                    <option value="" class="option-month">August</option>
-                    <option value="" class="option-month">September</option>
-                    <option value="" class="option-month">October</option>
-                    <option value="" class="option-month">November</option>
-                    <option value="" class="option-month">December</option>
+                    <option value="0" class="option-month">Junuary</option>
+                    <option value="1" class="option-month">February</option>
+                    <option value="2" class="option-month">March</option>
+                    <option value="3" class="option-month">April</option>
+                    <option value="4" class="option-month">May</option>
+                    <option value="5" class="option-month">June</option>
+                    <option value="6" class="option-month">July</option>
+                    <option value="7" class="option-month">August</option>
+                    <option value="8" class="option-month">September</option>
+                    <option value="9" class="option-month">October</option>
+                    <option value="10" class="option-month">November</option>
+                    <option value="11" class="option-month">December</option>
                 </select>
             </div>
             <div class="calendar">
@@ -104,4 +104,6 @@
     </section>
 </body>
 <script src="js/select_color.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/calendar.js"></script>
 </html>

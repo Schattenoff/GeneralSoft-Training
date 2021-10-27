@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 .logout_btn:hover {
@@ -76,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 15px solid transparent;
     cursor: pointer;
     opacity: 80%;
+    transition: all 0.5s ease;
 }
 
 .arrow:hover {
