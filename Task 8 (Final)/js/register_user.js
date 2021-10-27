@@ -3,7 +3,6 @@ let regLogin = document.getElementById('regLogin');
 let regPass = document.getElementById('regPass');
 
 function userStorage() {
-
     //Проверка на пустые поля
     if (userName.value == "" || regLogin.value == "" || regPass.value == "") {
        return helper.message(false, 'You have empty fields!');
