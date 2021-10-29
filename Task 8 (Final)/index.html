@@ -29,7 +29,7 @@
                 <div class="arrow left" onclick="minus()"></div>
                 <p class="year">2021</p>
                 <div class="arrow right" onclick="plus()"></div>
-                <select name="month" id="select-month" class="select-month">
+                <select id="select-month" class="select-month">
                     <option value="0" class="option-month">Junuary</option>
                     <option value="1" class="option-month">February</option>
                     <option value="2" class="option-month">March</option>
@@ -44,8 +44,8 @@
                     <option value="11" class="option-month">December</option>
                 </select>
             </div>
-            <div class="calendar">
-                <div class="calendar-week mt-no">
+            <div id="calendar" class="calendar">
+                <!-- <div class="calendar-week mt-no">
                     <div class="calendar-box">1</div>
                     <div class="calendar-box">2</div>
                     <div class="calendar-box">3</div>
@@ -89,21 +89,35 @@
                     <div class="calendar-box">5</div>
                     <div class="calendar-box">6</div>
                     <div class="calendar-box">7</div>
-                </div>
+                </div> -->
             </div>
             <select name="color" id="select-color" class="select-color" onchange="update()">
                 <option value="0" class="option-color">Blue</option>
                 <option value="1" class="option-color">Black</option>
                 <option value="2" class="option-color">Yellow</option>
             </select>
-            <div class="add_events">
+            <div id="openModal" class="add_events">
                 <div class="horizontal-plus"></div>
                 <div class="vertical-plus"></div>
             </div>
+            <div id="myModal" class="modal">
+                <!-- Модальное содержание -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h1 class="modal-title">Create Event</h1>
+                  <form class="modal-form" >
+                    <input type="text" placeholder="Title..." class="modal-input">
+                    <input type="date" placeholder="Date..." class="modal-input">
+                    <input type="text" placeholder="Descrtiption..." class="modal-input descrtiption">
+                    <button class="modalBtn">Accept</button>
+                </form>
+                </div>
+              </div>
         </div>
     </section>
 </body>
 <script src="js/select_color.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/calendar.js"></script>
+<script src="js/add_events.js"></script>
 </html>

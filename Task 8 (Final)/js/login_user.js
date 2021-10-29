@@ -1,7 +1,6 @@
 let login = document.getElementById('login');
 let pass = document.getElementById('pass');
 
-
 function verify(email, password, id) {
     if (login.value == email && pass.value == password) {
         helper.message(true, 'You are successfully logged in!');
@@ -25,3 +24,8 @@ function login_user() {
         verify(regLogin, regPass, i); 
     }
 }
+
+function disableBack() { window.history.forward(); }
+        setTimeout("disableBack()", 0);
+        window.onunload = function () { null };
+
