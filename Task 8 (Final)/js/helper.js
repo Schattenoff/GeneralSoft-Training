@@ -32,6 +32,11 @@ let helper = (function () {
                     mes.style.display = 'none';
                 },5000);
             }
+        },
+        disableBack: function() {
+        { window.history.forward(); }
+        setTimeout("disableBack()", 0);
+        window.onunload = function () { null }
         }
     }
 })();
