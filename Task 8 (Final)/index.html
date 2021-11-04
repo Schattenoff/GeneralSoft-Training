@@ -17,7 +17,7 @@
             <h1>Calendar Application</h1>
             <div class="logout_block">
                 <p class="name">userName</p>
-                <a href="sign-in.html" class="logout_btn" onclick="logout()">
+                <a href="sign-in.html" class="logout_btn">
                     Logout
                 </a>
             </div>
@@ -55,6 +55,7 @@
                 <div class="horizontal-plus"></div>
                 <div class="vertical-plus"></div>
             </div>
+
             <div id="myModal" class="modal">
                 <!-- Модальное содержание -->
                 <div class="modal-content">
@@ -63,16 +64,34 @@
                   <form class="modal-form" >
                     <input type="text" placeholder="Title..." class="modal-input">
                     <input type="text" placeholder="Date..." class="modal-input">
-                    <input type="text" placeholder="Descrtiption..." class="modal-input descrtiption">
+                    <textarea name="descrtiption" placeholder="Descrtiption..." id="" cols="30" rows="10" class="modal-input descrtiption"></textarea>
                     <button class="modalBtn">Accept</button>
                 </form>
+                </div>
+              </div>
+
+              <div id="myModalEvent" class="modal_event">
+                <!-- Модальное содержание -->
+                <div class="modal-content">
+                  <span class="close" onclick="test2()">&times;</span>
+                  <h1 class="modal-title">Date</h1>
+                      <div class="event">
+                          text
+                        <span class="delete">&times;</span>
+                      </div>
+                      <div class="event">
+                        text
+                      <span class="delete">&times;</span>
+                    </div>
                 </div>
               </div>
         </div>
     </section>
 </body>
+<script src="js/Database.js"></script>
 <script src="js/select_color.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/add_events.js"></script>
+<script src="js/modal_events.js"></script>
 </html>

@@ -17,10 +17,12 @@ function login_user() {
     if (login.value == "" || pass.value == "") {
         return helper.message(false, 'You have empty fields!');
     } 
-    let users = JSON.parse(localStorage.getItem('users'));
-    for (let i = 0; i < users.length; i++) {    
-        let regLogin = users[i].regLogin;
-        let regPass = users[i].regPass;
+    let database = new Database();
+    for (let i = 0; i < database.onGetLength(); i++) {    
+        let regLogin = database.onGetLogin(i);
+        let regPass = database.onGetPassword(i);
         verify(regLogin, regPass, i); 
+        console.log(regLogin);
     }
+    
 }

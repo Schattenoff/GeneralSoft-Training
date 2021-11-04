@@ -3,7 +3,7 @@ let helper = (function () {
         link: function(href) {
             setTimeout(()=>{
                 document.location.href = href;
-            },3500);
+            },2500);
         },
         validatePass: function(pass) {
             let valpass = /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[a-zA-Z0-9!%^&*$@]{6,}/g;
@@ -33,10 +33,5 @@ let helper = (function () {
                 },5000);
             }
         },
-        disableBack: function() {
-        { window.history.forward(); }
-        setTimeout("disableBack()", 0);
-        window.onunload = function () { null }
-        }
     }
 })();

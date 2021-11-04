@@ -36,12 +36,10 @@ const renderCalendar = () => {
     }
     
     for (let i = 1; i <= lastDay; i++) {
-        let day = document.getElementsByClassName('calendar-box');
         if (i === new Date().getDate() && dt.getMonth() === new Date().getMonth() && dt.getFullYear() === new Date().getFullYear()) {
-            days += `<div class="calendar-box today">${i}</div>`
+            days += `<div class="calendar-box today" onclick="test1();">${i}</div>`
         } else {
-            days += `<div class="calendar-box">${i}</div>`;
-            day.textContent = 2;
+            days += `<div class="calendar-box" onclick="test1();">${i}</div>`;
         } 
     }
     
@@ -50,6 +48,7 @@ const renderCalendar = () => {
         monthDays.innerHTML = days;
     }
 }
+
 
 function change() {
     dt.setMonth(select.options[select.selectedIndex].value);
@@ -68,23 +67,12 @@ document.querySelector('.right').addEventListener('click', () => {
 
 renderCalendar();
 
-helper.disableBack();   
-
-function logout() {
-    helper.message(true, "Ok! Logout!");
-}
-
+helper.disableBack();
 
 let name = document.querySelector('.name');
 let users = JSON.parse(localStorage.getItem('users'));
 let id = JSON.parse(localStorage.getItem('id'));
-name.textContent = `Name: ${users[id].userName}`
-
-
-
-
-
-
+name.textContent = `Name: ${users[id].userName}`;
 
 
 

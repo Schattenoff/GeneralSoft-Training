@@ -18,15 +18,14 @@ function userStorage() {
         'regPass': regPass.value
     }
 
-    let user = JSON.parse(localStorage.getItem('users'));
-    if (user == null) user = [];
-    for (let i = 0; i < user.length; i++) {
-        if (user[i].regLogin == regLogin.value) {
+    let database = new Database();
+    for (let i = 0; i < database.onGetLength(); i++) {
+        if (database.Database[i].regLogin == regLogin.value) {
             return helper.message(false, 'Email is Busy!');
         }
     }
-    user.push(users);
-    localStorage.setItem('users', JSON.stringify(user));
+    
+    database.onInsertIntoDatebase(users);
     helper.message(true, 'You have successfully registered!');
     helper.link('sign-in.html');
 }
