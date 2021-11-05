@@ -12,6 +12,8 @@ body {
 
 :root{
     --color-theme: #81C0CB;
+    --color-btn: #e46562;
+    --color-hover: #ff4c49;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -266,8 +268,8 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     margin-top: 10px;
     height: 35px;
-    background-color: #e46562;
-    border: 2px solid #e46562;
+    background-color: var(--color-btn);
+    border: 2px solid var(--color-btn);
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -276,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modalBtn:hover {
-    border: 2px solid #db4846;
+    border: 2px solid var(--color-hover);
 }
 
 .calendar {

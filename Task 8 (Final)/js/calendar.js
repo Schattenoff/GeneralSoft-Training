@@ -67,12 +67,10 @@ document.querySelector('.right').addEventListener('click', () => {
 
 renderCalendar();
 
-helper.disableBack();
 
 let name = document.querySelector('.name');
-let users = JSON.parse(localStorage.getItem('users'));
-let id = JSON.parse(localStorage.getItem('id'));
-name.textContent = `Name: ${users[id].userName}`;
+let database = new Database();
+name.innerHTML =`Name: ${(database.onGetUserName(database.onGetUserID()))}`;
 
 
 

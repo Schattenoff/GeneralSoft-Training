@@ -20,9 +20,12 @@ class Database {
         let id = JSON.parse(localStorage.getItem('id'));
         return id;
     }
-    onSetUserName(userName){
+    onSetUserName(userName) {
         this.Database[this.onGetUserID].userName = userName;
         this.onSaveDatabase();
+    }
+    onGetUserName(id = this.onGetUserID) {
+        return this.Database[id].userName;
     }
     onGetLogin(id = this.onGetUserID) {
         return this.Database[id].regLogin;

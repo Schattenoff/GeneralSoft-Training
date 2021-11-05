@@ -1,5 +1,18 @@
 let login = document.getElementById('login');
 let pass = document.getElementById('pass');
+let database = new Database();
+
+function login_user() {
+    if (login.value == "" || pass.value == "") {
+        return helper.message(false, 'You have empty fields!');
+    } 
+    
+    for (let i = 0; i < database.onGetLength(); i++) {    
+        let regLogin = database.onGetLogin(i);
+        let regPass = database.onGetPassword(i);
+        verify(regLogin, regPass, i); 
+    }
+}
 
 function verify(email, password, id) {
     if (login.value == email && pass.value == password) {
@@ -11,18 +24,4 @@ function verify(email, password, id) {
         return helper.message(false, 'Wrong password!');
     }
     else return helper.message(false, 'User is not found!');
-}
-
-function login_user() {
-    if (login.value == "" || pass.value == "") {
-        return helper.message(false, 'You have empty fields!');
-    } 
-    let database = new Database();
-    for (let i = 0; i < database.onGetLength(); i++) {    
-        let regLogin = database.onGetLogin(i);
-        let regPass = database.onGetPassword(i);
-        verify(regLogin, regPass, i); 
-        console.log(regLogin);
-    }
-    
 }

@@ -20,7 +20,7 @@ function userStorage() {
 
     let database = new Database();
     for (let i = 0; i < database.onGetLength(); i++) {
-        if (database.Database[i].regLogin == regLogin.value) {
+        if (database.onGetLogin(i) == regLogin.value) {
             return helper.message(false, 'Email is Busy!');
         }
     }
