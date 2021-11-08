@@ -12,6 +12,7 @@ const renderCalendar = () => {
     dt.setDate(1);
     
     const year = dt.getFullYear();
+    const month = dt.getMonth();
     
     const lastDay = new Date(dt.getFullYear(), dt.getMonth() + 1, 0).getDate();
     const prevLastDay = new Date(dt.getFullYear(), dt.getMonth(), 0).getDate();
@@ -37,9 +38,9 @@ const renderCalendar = () => {
     
     for (let i = 1; i <= lastDay; i++) {
         if (i === new Date().getDate() && dt.getMonth() === new Date().getMonth() && dt.getFullYear() === new Date().getFullYear()) {
-            days += `<div class="calendar-box today" onclick="test1();">${i}</div>`
+            days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i}</div>`
         } else {
-            days += `<div class="calendar-box" onclick="test1();">${i}</div>`;
+            days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i}</div>`;
         } 
     }
     
@@ -70,7 +71,7 @@ renderCalendar();
 
 let name = document.querySelector('.name');
 let database = new Database();
-name.innerHTML =`Name: ${(database.onGetUserName(database.onGetUserID()))}`;
+name.innerHTML = `Name: ${(database.onGetUserName(database.onGetUserID()))}`;
 
 
 

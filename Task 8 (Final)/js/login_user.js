@@ -17,7 +17,7 @@ function login_user() {
 function verify(email, password, id) {
     if (login.value == email && pass.value == password) {
         helper.message(true, 'You are successfully logged in!');
-        localStorage.setItem("id", id);
+        database.onSetUserID(id);
         return helper.link('index.html');
     }
     else if (login.value == email && pass.value != password) {

@@ -25,7 +25,7 @@ function userStorage() {
         }
     }
     
-    database.onInsertIntoDatebase(users);
+    database.onInsertIntoDatabase(users);
     helper.message(true, 'You have successfully registered!');
     helper.link('sign-in.html');
 }
