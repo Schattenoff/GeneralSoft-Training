@@ -37,6 +37,14 @@ class Database {
         }
         this.onSaveUser(user);
     }
+    onGetEvents(id = this.onGetUserID()) {
+        return this.Database[id].events;
+    }
+    onDeleteEventUser(idEvent) {
+        let user = this.onGetInfoUser();
+        user.events.splice(user.events[idEvent], 1);
+        this.onSaveUser(user);
+    }
     onSetUserName(userName) {
         this.Database[this.onGetUserID()].userName = userName;
         this.onSaveDatabase();

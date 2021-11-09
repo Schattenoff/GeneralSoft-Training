@@ -33,6 +33,7 @@ function generateEvents() {
   title.value = "";
   date.value = "";
   description.value = "";
+  modal.style.display = "none";
 }
 
 
