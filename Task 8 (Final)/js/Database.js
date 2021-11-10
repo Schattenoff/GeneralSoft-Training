@@ -42,7 +42,7 @@ class Database {
     }
     onDeleteEventUser(idEvent) {
         let user = this.onGetInfoUser();
-        user.events.splice(user.events[idEvent], 1);
+        user.events.splice(idEvent, 1);
         this.onSaveUser(user);
     }
     onSetUserName(userName) {
