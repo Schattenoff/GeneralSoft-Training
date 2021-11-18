@@ -16,8 +16,6 @@ let Module = (function () {
         }
     }
 
-    
-
     return {
         isArray: function(obj) {
             return Array.isArray(obj);
@@ -68,15 +66,15 @@ let Module = (function () {
             else 
             return false;
         },
-        // Developer: function(firstName, lastName, technology) {
-        //     this.firstName = firstName;
-        //     this.lastName = lastName;
-        //     this.technology = technology;
-        //     if (typeof Module.Developer.instance === "object") {
-        //         return Module.Developer.instance;
-        //     }
-        //     Module.Developer.instance = this;
-        // },
+        Developer: function(firstName, lastName, technology) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.technology = technology;
+            if (typeof Module.Developer.instance === "object") {
+                return Module.Developer.instance;
+            }
+            Module.Developer.instance = this;
+        },
         sum: memo(function(a,b) {
             let result = a + b;
             return result;

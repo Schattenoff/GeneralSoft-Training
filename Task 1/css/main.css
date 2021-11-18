@@ -411,6 +411,13 @@ span {
 	padding-bottom: 40px;
 }
 
+.footer_href {
+	color: #FFF;
+}
+
+.footer_href:hover {
+	opacity: 0.5;
+}
 
 
 

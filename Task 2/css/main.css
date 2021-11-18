@@ -3,9 +3,6 @@ body {
 	font-weight: 600;
 	font-size: 13px;
 	color: #597275;
-	padding: 0;
-	margin: 0;
-}
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -14,14 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 30px;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 ul, li{
 	display: block;
-	padding: 0;
-	margin: 0;
 }
 
 a {
@@ -99,8 +90,8 @@ a {
 .offer {
 	height: 570px;
 	background: url(../img/bg.png) no-repeat;
-	background-size: 100%;
-	height-size: 100%;
+	background-size: cover;
+	height: 100%;
 	color: #FFF;
 	text-align: center;
 	justify-content: center;
