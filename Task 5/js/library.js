@@ -15,7 +15,7 @@ let Module = (function () {
             return cache[arguments[0], arguments[1]] = fn(...arguments);
         }
     }
-
+      
     return {
         isArray: function(obj) {
             return Array.isArray(obj);
