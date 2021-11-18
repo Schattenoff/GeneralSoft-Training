@@ -7,11 +7,16 @@ let Module = (function () {
             if (arguments[0], arguments[1] in cache) {
                 console.log("cache");
                 return cache [arguments[0], arguments[1]];
+            } else if (arguments[1], arguments[0] in cache) {
+                console.log("cache");
+                return cache [arguments[1], arguments[0]];
             }
             console.log("new number - write cache");
             return cache[arguments[0], arguments[1]] = fn(...arguments);
         }
     }
+
+    
 
     return {
         isArray: function(obj) {
@@ -63,18 +68,15 @@ let Module = (function () {
             else 
             return false;
         },
-        Developer: class {
-            constructor(firstName, lastName, technology) {
-                if (typeof Module.Developer.instance === "object") {
-                    return Module.Developer.instance;
-                }
-                Module.Developer.instance = this;
-                this.firstName = firstName;
-                this.lastName = lastName;
-                this.technology = technology;
-                return this;
-            }
-        },
+        // Developer: function(firstName, lastName, technology) {
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.technology = technology;
+        //     if (typeof Module.Developer.instance === "object") {
+        //         return Module.Developer.instance;
+        //     }
+        //     Module.Developer.instance = this;
+        // },
         sum: memo(function(a,b) {
             let result = a + b;
             return result;
