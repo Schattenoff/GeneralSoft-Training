@@ -7,7 +7,6 @@ class Database {
         if(this.Database == null) this.Database = [];
         return this.Database;
     }
-        
     onSaveDatabase() {
         if (this.Database == null) return;
         localStorage.setItem('users', JSON.stringify(this.Database));
@@ -21,7 +20,7 @@ class Database {
         this.onSaveDatabase();
     }
     onSetUserID(id) {
-        localStorage.setItem("id", id);
+        localStorageService.set("id", id);
     }
     onGetUserID() {
         let id = JSON.parse(localStorage.getItem('id'));

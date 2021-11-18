@@ -1,18 +1,18 @@
-let modal = document.getElementById("myModal");
-var btn = document.getElementById("openModal");
-var span = document.getElementsByClassName("close")[0];
+let addModal = document.getElementById("myModal");
+var addBtn = document.getElementById("openModal");
+var addSpan = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
+addbtn.onclick = function() {
+  addModal.style.display = "block";
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+addSpan.onclick = function() {
+  addModal.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == addModal) {
+    addModal.style.display = "none";
   }
 }
 
