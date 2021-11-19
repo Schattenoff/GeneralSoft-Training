@@ -11,6 +11,12 @@ let helper = (function () {
                 return true;
             }
         },
+        validateEmail: function(email) {
+            let valemail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/g;
+            if (valemail.test(email) == true) {
+                return true;
+            }
+        },
         message: function(type, sms) {
             let mes = document.querySelector('.message');
             let mes_title = document.querySelector('.message_title');
@@ -32,6 +38,24 @@ let helper = (function () {
                     mes.style.display = 'none';
                 },5000);
             }
+        },
+        createNumber: function(i) {
+            if (i < 10) {
+              return i = `0${i}`;
+            } else {
+              return i;
+            }
+        },
+        verify: function(email, password, id) {
+            if (login.value == email && pass.value == password) {
+                helper.message(true, 'You are successfully logged in!');
+                database.onSetUserID(id);
+                return helper.link('index.html');
+            }
+            else if (login.value == email && pass.value != password) {
+                return helper.message(false, 'Wrong password!');
+            }
+            else return helper.message(false, 'User is not found!');
         },
     }
 })();

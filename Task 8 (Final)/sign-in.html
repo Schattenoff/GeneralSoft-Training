@@ -17,25 +17,22 @@
             <p class="title">
                 Sign In
             </p>
-            <form class="sign-in_form" onsubmit="return false;">
+            <form class="sign-in_form">
                 <input id="login" placeholder="Email..." name="email" type="email" class="input" value="" required>
                 <input id="pass" placeholder="Password..." name="pass" type="password" class="input" value="" required>
-                <button id="login_btn" class="form_btn" onclick="login_user()">Accept</button>
+                <button id="login_btn" class="form_btn" onclick="login_user(event)">Accept</button>
             </form>
         </div>
         <p class="text">
             Don't have an account? Try to <span class="text_span"><a href="sign-up.html" class="text_span"><u>Sign-up</u></a>!</span> 
         </p>
         <div class="message" style="display: none;">
-            <h1 class="message_title">
-                Error
-            </h1>
-            <p class="message_text">
-                Please try again!
-            </p>
+            <h1 class="message_title"></h1>
+            <p class="message_text"></p>
         </div>
     </section>
 </body>
+<script src="js/localStorageService.js"></script>
 <script src="js/Database.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/login_user.js"></script>

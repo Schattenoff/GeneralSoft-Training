@@ -29,7 +29,7 @@
                 <div class="arrow left" id="backButton"></div>
                 <p class="year"></p>
                 <div class="arrow right" id="nextButton"></div>
-                <select id="select-month" class="select-month" onchange="change()">
+                <select id="select-month" class="select-month" onchange="calendar.changeMonth()">
                     <option value="0" class="option-month">Junuary</option>
                     <option value="1" class="option-month">February</option>
                     <option value="2" class="option-month">March</option>
@@ -60,11 +60,11 @@
                 <div class="modal-content">
                   <span class="close">&times;</span>
                   <h1 class="modal-title">Create Event</h1>
-                  <form class="modal-form" onsubmit="return false;">
+                  <form class="modal-form">
                     <input type="text" placeholder="Title..." class="modal-input" id="title">
                     <input type="text" placeholder="Date..." class="modal-input" id="date" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}">
                     <textarea name="descrtiption" placeholder="Description..." cols="30" rows="10" class="modal-input descrtiption" id="description"></textarea>
-                    <button class="modalBtn" onclick="generateEvents();">Accept</button>
+                    <button class="modalBtn" onclick="generateEvents(event);">Accept</button>
                 </form>
                 </div>
               </div>
@@ -90,6 +90,7 @@
         
     </section>
 </body>
+<script src="js/Calendar.js"></script>
 <script src="js/Database.js"></script>
 <script src="js/localStorageService.js"></script>
 <script src="js/select_color.js"></script>

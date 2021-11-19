@@ -1,8 +1,8 @@
 let addModal = document.getElementById("myModal");
-var addBtn = document.getElementById("openModal");
-var addSpan = document.getElementsByClassName("close")[0];
+let addBtn = document.getElementById("openModal");
+let addSpan = document.getElementsByClassName("close")[0];
 
-addbtn.onclick = function() {
+addBtn.onclick = function() {
   addModal.style.display = "block";
 }
 
@@ -22,18 +22,19 @@ let date = document.getElementById("date");
 let description = document.getElementById("description");
 let modalBtn = document.querySelector('.modalBtn');
 
-function generateEvents() {
+function generateEvents(event) {
+  event.preventDefault();
   let db = new Database();
-  let event = {
+  let events = {
     title: title.value,
     date: date.value,
     description: description.value
   };
-  db.onAddEventUser(event);
+  db.onAddEventUser(events);
   title.value = "";
   date.value = "";
   description.value = "";
-  modal.style.display = "none";
+  addModal.style.display = "none";
 }
 
 

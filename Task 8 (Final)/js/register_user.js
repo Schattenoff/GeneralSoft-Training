@@ -2,20 +2,26 @@ let userName = document.getElementById('userName');
 let regLogin = document.getElementById('regLogin');
 let regPass = document.getElementById('regPass');
 
-function userStorage() {
-    //Проверка на пустые поля
+function userStorage(event) {
+    event.preventDefault();
+    
     if (userName.value == "" || regLogin.value == "" || regPass.value == "") {
        return helper.message(false, 'You have empty fields!');
     } 
 
-    if (helper.validatePass(regPass.value) != true) {
+    if (helper.validateEmail(regLogin.value) != true && helper.validatePass(regPass.value) != true ) {
+        return helper.message(false, 'Email and password are not validated!');
+    } else if (helper.validateEmail(regLogin.value) != true) {
+        return helper.message(false, 'Email does not pass validation!');
+    } else if (helper.validatePass(regPass.value) != true) {
         return helper.message(false, 'The password does not pass validation!');
     }
 
     let users = {
         'userName': userName.value,
         'regLogin': regLogin.value,  
-        'regPass': regPass.value
+        'regPass': regPass.value,
+        'events':[]
     }
 
     let database = new Database();

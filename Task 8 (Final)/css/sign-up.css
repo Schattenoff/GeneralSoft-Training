@@ -91,6 +91,7 @@ body {
 }
 
 .message {
+    display: none;
     position: fixed;
     right: 100px;
     bottom: 40px;

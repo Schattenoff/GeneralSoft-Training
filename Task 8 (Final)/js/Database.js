@@ -2,14 +2,19 @@ class Database {
     constructor() {
         this.Database = this.onGetDatabase();
     }
+    local() {
+        return new localStorageService();
+    }
     onGetDatabase() {
-        this.Database = JSON.parse(localStorage.getItem('users'));
+        this.Database = this.local().parse('users') 
+        // JSON.parse(localStorage.getItem('users'));
         if(this.Database == null) this.Database = [];
         return this.Database;
     }
     onSaveDatabase() {
         if (this.Database == null) return;
-        localStorage.setItem('users', JSON.stringify(this.Database));
+        this.local().set('users', this.local().stringify(this.Database));
+        // localStorage.setItem('users', JSON.stringify(this.Database));
     }   
     onSaveUser(user,id = this.onGetUserID()){
         this.Database[id] = user;
@@ -20,10 +25,10 @@ class Database {
         this.onSaveDatabase();
     }
     onSetUserID(id) {
-        localStorageService.set("id", id);
+        return this.local().set("id", id)
     }
     onGetUserID() {
-        let id = JSON.parse(localStorage.getItem('id'));
+        let id = this.local().parse("id");
         return id;
     }
     onAddEventUser(event, id = this.onGetUserID()){
@@ -64,3 +69,4 @@ class Database {
         return this.Database[id];
     }
 }
+
