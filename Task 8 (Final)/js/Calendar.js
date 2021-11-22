@@ -1,66 +1,78 @@
 class Calendar {
     constructor() {
-
-    }
-    dateNow() {
-        let dt = new Date();
-        return dt;
+        this.dt = new Date();
+        this.days = "";
     }
     selectMonth() {
         let selectMonth = document.getElementById('select-month');
-        selectMonth.selectedIndex = this.dateNow().getMonth();
+        selectMonth.selectedIndex = this.dt.getMonth();
     }
     changeMonth() {
         let selectMonth = document.getElementById('select-month');
-        this.dateNow().setMonth(selectMonth.options[selectMonth.selectedIndex].value);
+        this.dt.setMonth(selectMonth.options[selectMonth.selectedIndex].value);
+        console.log(this.dt);
         this.renderCalendar();
     }
     DayOfTheWeek() {
         let dayIndex = 0;
-        const firstDayIndex = this.dateNow().getDay();
+        const firstDayIndex = this.dt.getDay();
         for(let i = 0; i <= firstDayIndex; i++) {
             if (firstDayIndex == 0) {
                 dayIndex = 7; 
             }
             else dayIndex = firstDayIndex;
         }
+        return dayIndex;
+    }
+    daysReset() {
+        this.days = "";
     }
     prevDate() {
-        const prevLastDay = new Date(this.dateNow().getFullYear(), this.dateNow().getMonth(), 0).getDate(); 
+        const prevLastDay = new Date(this.dt.getFullYear(), this.dt.getMonth(), 0).getDate(); 
         for(let i = this.DayOfTheWeek()-1; i > 0; i--) {
-            days += `<div class="calendar-box prevDate">${prevLastDay - i +1}</div>`;
+            this.days += `<div class="calendar-box prevDate">${prevLastDay - i +1}</div>`;
         }
     }
     daysMonth() {
-        const monthDays = document.getElementById('calendar');
-        const month = this.dateNow().getMonth(0);
-        const year = this.dateNow().getFullYear();
-        let days = "";
-        const lastDay = new Date(this.dateNow().getFullYear(), this.dateNow().getMonth() + 1, 0).getDate();
+        const month = this.dt.getMonth();
+        const year = this.dt.getFullYear();
+        const lastDay = new Date(this.dt.getFullYear(), this.dt.getMonth() + 1, 0).getDate();
         for (let i = 1; i <= lastDay; i++) {
-            if (i === new Date().getDate() && this.dateNow().getMonth() === new Date().getMonth() && this.dateNow().getFullYear() === new Date().getFullYear()) {
-                days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i}</div>`
+            if (i === new Date().getDate() && this.dt.getMonth() === new Date().getMonth() && this.dt.getFullYear() === new Date().getFullYear()) {
+                this.days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i}</div>`
             } else {
-                days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i}</div>`;
-                monthDays.innerHTML = days;
+                this.days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i}</div>`;
             } 
         }
     }
+    nextDate() {
+        const monthDays = document.getElementById('calendar');
+        const lastDayIndex = new Date(this.dt.getFullYear(), this.dt.getMonth() + 1, 0).getDay();
+        const nextDays = 7 - lastDayIndex;
+        for (let i = 1; i <= nextDays; i++) {
+            this.days += `<div class="calendar-box nextDate">${i}</div>`;
+            monthDays.innerHTML = this.days;
+        }
+    }
     displayYear() {
-        const year = this.dateNow().getFullYear();
+        const year = this.dt.getFullYear();
         let displayYear = document.querySelector('.year');
         displayYear.innerHTML = year;
     }
+    addYear() {
+        this.dt.setFullYear(this.dt.getFullYear() + 1);
+        this.renderCalendar();
+    }
+    subYear() {
+        this.dt.setFullYear(this.dt.getFullYear() - 1);
+        this.renderCalendar();
+    }
     renderCalendar() {
-        this.dateNow();
         this.displayYear();
         this.selectMonth();
+        this.daysReset();
         this.prevDate();
         this.daysMonth();
+        this.nextDate();
     }
-
 }
-
-let calendar = new Calendar();
-
-calendar.renderCalendar();

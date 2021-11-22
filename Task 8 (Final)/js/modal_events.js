@@ -14,7 +14,7 @@ function closeModal() {
   document.getElementsByClassName("container_events")[0].innerHTML = "";
 }
 
-function onLoadEvents(){
+function onLoadEvents() {
   let temp = null;
   return function(data){
     if(temp == null) temp = data;

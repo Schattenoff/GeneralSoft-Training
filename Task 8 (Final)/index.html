@@ -26,9 +26,9 @@
     <section class="section-calendar">
         <div class="container">
             <div class="navigation_calendar">
-                <div class="arrow left" id="backButton"></div>
+                <div class="arrow left" id="backButton" onclick="calendar.subYear()"></div>
                 <p class="year"></p>
-                <div class="arrow right" id="nextButton"></div>
+                <div class="arrow right" id="nextButton" onclick="calendar.addYear()"></div>
                 <select id="select-month" class="select-month" onchange="calendar.changeMonth()">
                     <option value="0" class="option-month">Junuary</option>
                     <option value="1" class="option-month">February</option>
@@ -44,8 +44,7 @@
                     <option value="11" class="option-month">December</option>
                 </select>
             </div>
-            <div id="calendar" class="calendar">
-            </div>
+            <div id="calendar" class="calendar"></div>
             <select name="color" id="select-color" class="select-color" onchange="update()">
                 <option value="0" class="option-color">Blue</option>
                 <option value="1" class="option-color">Black</option>
@@ -93,9 +92,9 @@
 <script src="js/Calendar.js"></script>
 <script src="js/Database.js"></script>
 <script src="js/localStorageService.js"></script>
+<script src="js/initializationCalendar.js"></script>
 <script src="js/select_color.js"></script>
 <script src="js/helper.js"></script>
-<script src="js/calendar.js"></script>
 <script src="js/add_events.js"></script>
 <script src="js/modal_events.js"></script>
 </html>
