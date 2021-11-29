@@ -50,39 +50,22 @@ let helper = (function () {
             if (login.value == email && pass.value == password) {
                 helper.message(true, 'You are successfully logged in!');
                 database.onSetUserID(id);
-                return helper.link('index.html');
+                helper.link('index.html');
             }
             else if (login.value == email && pass.value != password) {
-                return helper.message(false, 'Wrong password!');
+                helper.message(false, 'Wrong password!');
             }
-            else return helper.message(false, 'User is not found!');
+            else helper.message(false, 'User is not found!');
         },
-        dateInputMasked: function(elm) {
-                elm.addEventListener('keypress', function(e) {
-                  if(e.keyCode < 47 || e.keyCode > 57) {
-                    e.preventDefault();
-                  }
-                  
-                  var len = elm.value.length;
-                  
-                  // If we're at a particular place, let the user type the slash
-                  // i.e., 12/12/1212
-                  if(len !== 1 || len !== 3) {
-                    if(e.keyCode == 47) {
-                      e.preventDefault();
-                    }
-                  }
-                  
-                  // If they don't add the slash, do it for them...
-                  if(len === 2) {
-                    elm.value += '.';
-                  }
-              
-                  // If they don't add the slash, do it for them...
-                  if(len === 5) {
-                    elm.value += '.';
-                  }
-                });
+        dateValueMasked: function() {
+            let date = document.getElementById("date");
+            date.value = "__.__.____";
+            date.setSelectionRange(0, 0);
+        },
+        dateInputMasked: function() {
+            let date = document.getElementById("date");
+            let pattern = /^\d+$/; 
+            let position_cursor = 0;
         },
     }
 })();

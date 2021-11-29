@@ -1,4 +1,3 @@
-
 let calendar = new Calendar();
 calendar.renderCalendar();
 

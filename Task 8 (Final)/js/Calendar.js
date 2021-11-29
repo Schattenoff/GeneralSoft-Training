@@ -10,10 +10,10 @@ class Calendar {
     changeMonth() {
         let selectMonth = document.getElementById('select-month');
         this.dt.setMonth(selectMonth.options[selectMonth.selectedIndex].value);
-        console.log(this.dt);
         this.renderCalendar();
     }
     DayOfTheWeek() {
+        this.dt.setDate(1);
         let dayIndex = 0;
         const firstDayIndex = this.dt.getDay();
         for(let i = 0; i <= firstDayIndex; i++) {

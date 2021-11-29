@@ -61,7 +61,7 @@
                   <h1 class="modal-title">Create Event</h1>
                   <form class="modal-form">
                     <input type="text" placeholder="Title..." class="modal-input" id="title">
-                    <input type="text" placeholder="Date..." class="modal-input" id="date" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}">
+                    <input type="text" placeholder="Date..." class="modal-input" id="date" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}" oninput="helper.dateInputMasked()" onclick="helper.dateValueMasked()">
                     <textarea name="descrtiption" placeholder="Description..." cols="30" rows="10" class="modal-input descrtiption" id="description"></textarea>
                     <button class="modalBtn" onclick="generateEvents(event);">Accept</button>
                 </form>
@@ -89,10 +89,13 @@
         
     </section>
 </body>
-<script src="js/Calendar.js"></script>
-<script src="js/Database.js"></script>
 <script src="js/localStorageService.js"></script>
+<script src="js/Database.js"></script>
+<script src="js/Calendar.js"></script>
 <script src="js/initializationCalendar.js"></script>
+
+<!-- <script src="js/functionCalendar.js"></script> -->
+
 <script src="js/select_color.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/add_events.js"></script>

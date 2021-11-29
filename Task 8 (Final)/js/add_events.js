@@ -22,7 +22,6 @@ let date = document.getElementById("date");
 let description = document.getElementById("description");
 let modalBtn = document.querySelector('.modalBtn');
 
-// helper.dateInputMasked(date);
 
 function generateEvents(event) {
   event.preventDefault();

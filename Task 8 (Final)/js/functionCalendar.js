@@ -38,12 +38,12 @@ const renderCalendar = () => {
             days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i}</div>`;
         } else {
             days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i}</div>`;
-            monthDays.innerHTML = days;
         } 
     }
     
     for (let j = 1; j <= nextDays; j++) {
         days += `<div class="calendar-box nextDate">${j}</div>`;
+        monthDays.innerHTML = days;
     }
 }
 
@@ -64,6 +64,10 @@ document.querySelector('.right').addEventListener('click', () => {
 })
 
 renderCalendar();
+
+// let userName = document.querySelector('.name');
+// let database = new Database();
+// userName.innerHTML = `Name: ${(database.onGetUserName(database.onGetUserID()))}`;
 
 
 
