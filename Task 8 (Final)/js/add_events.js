@@ -22,9 +22,12 @@ let date = document.getElementById("date");
 let description = document.getElementById("description");
 let modalBtn = document.querySelector('.modalBtn');
 
+helper.dateInputMasked(date);
 
-function generateEvents(event) {
-  event.preventDefault();
+function generateEvents(e) {
+  e.preventDefault();
+  console.log(helper.validateDate(date.value));
+  if (helper.validateDate(date.value) == true && title.value != "") {
   let db = new Database();
   let events = {
     title: title.value,
@@ -36,6 +39,7 @@ function generateEvents(event) {
   date.value = "";
   description.value = "";
   addModal.style.display = "none";
+  } else return;
 }
 
 

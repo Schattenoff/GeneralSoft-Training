@@ -7,14 +7,12 @@ class Database {
     }
     onGetDatabase() {
         this.Database = this.local().parse('users') 
-        // this.Database = JSON.parse(localStorage.getItem('users'));
         if(this.Database == null) this.Database = [];
         return this.Database;
     }
     onSaveDatabase() {
         if (this.Database == null) return;
         this.local().set('users', this.local().stringify(this.Database));
-        // localStorage.setItem('users', JSON.stringify(this.Database));
     }   
     onSaveUser(user,id = this.onGetUserID()){
         this.Database[id] = user;
@@ -59,15 +57,12 @@ class Database {
         return this.Database[id].regLogin;
     }
     onGetPassword(id = this.onGetUserID()) {
-        console.log("on get password " + this.Database[id].regPass);
         return this.Database[id].regPass;
     }
     onGetLength() {
-        console.log("function on get length "+ this.Database.length);
         return this.Database.length;
     }
     onGetInfoUser(id = this.onGetUserID()){
-        console.log("function get info user "+ this.Database[id]);
         return this.Database[id];
     }
 }

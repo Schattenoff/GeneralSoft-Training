@@ -57,15 +57,28 @@ let helper = (function () {
             }
             else helper.message(false, 'User is not found!');
         },
-        dateValueMasked: function() {
-            let date = document.getElementById("date");
-            date.value = "__.__.____";
-            date.setSelectionRange(0, 0);
+        validateDate: function(date) {
+            let dateFormat = /^(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.](19|20)?[0-9]{2}$/;
+            return dateFormat.test(date);
         },
-        dateInputMasked: function() {
-            let date = document.getElementById("date");
-            let pattern = /^\d+$/; 
-            let position_cursor = 0;
+        dateInputMasked: function(elm) {
+                elm.addEventListener('keypress', function(e) {
+                  if(e.keyCode < 47 || e.keyCode > 57) {
+                    e.preventDefault();
+                  }
+                  let len = elm.value.length;
+                  if(len !== 1 || len !== 3) {
+                    if(e.keyCode == 47) {
+                      e.preventDefault();
+                    }
+                  }
+                  if(len === 2) {
+                    elm.value += '.';
+                  }
+                  if(len === 5) {
+                    elm.value += '.';
+                  }
+                });
         },
     }
 })();
