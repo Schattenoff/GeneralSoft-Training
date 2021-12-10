@@ -1,12 +1,9 @@
+@import url(reset.css);
+@import url(message.css);
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #a1a1a1;
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .sign-in {
@@ -88,46 +85,4 @@ body {
 
 .text_span:hover {
     opacity: 100%;
-}
-
-.message {
-    display: none;
-    position: fixed;
-    right: 100px;
-    bottom: 40px;
-    width: 200px;
-    height: 100px;
-    background: #e6e6e6;
-    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    animation-name: message;
-    animation-duration: 6000ms;
-}
-    
-.message_title {
-    margin-left: 10px;
-    font-size: 20px;
-    color: #e46562;
-    margin-bottom: 0px;
-}
-    
-.message_text {
-    margin-top: 5px;
-    margin-left: 10px;
-    color: #000;
-    font-size: 16px;
-}
-
-@keyframes message {
-    from {
-        opacity: 100%;
-    }
-
-    30% {
-        opacity: 100%;
-    }
-      
-    to {
-        opacity: 0%;
-    }
 }

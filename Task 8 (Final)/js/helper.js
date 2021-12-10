@@ -58,7 +58,7 @@ let helper = (function () {
             else helper.message(false, 'User is not found!');
         },
         validateDate: function(date) {
-            let dateFormat = /^(0?[1-9]|1[012])[- /.](0?[1-9]|[12][0-9]|3[01])[- /.](19|20)?[0-9]{2}$/;
+            let dateFormat = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
             return dateFormat.test(date);
         },
         dateInputMasked: function(elm) {

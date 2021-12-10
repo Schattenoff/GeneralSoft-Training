@@ -35,11 +35,12 @@ function generateEvents(e) {
     description: description.value
   };
   db.onAddEventUser(events);
+  helper.message(true, "Event Add Complete!");
   title.value = "";
   date.value = "";
   description.value = "";
   addModal.style.display = "none";
-  } else return;
+  } else return helper.message(false, "No validate date");
 }
 
 
