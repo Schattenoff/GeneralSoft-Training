@@ -39,9 +39,9 @@ class Calendar {
         const lastDay = new Date(this.dt.getFullYear(), this.dt.getMonth() + 1, 0).getDate();
         for (let i = 1; i <= lastDay; i++) {
             if (i === new Date().getDate() && this.dt.getMonth() === new Date().getMonth() && this.dt.getFullYear() === new Date().getFullYear()) {
-                this.days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i} <div class="point"></div></div>`
+                this.days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i} <div class="point point_${i}_${month+1}_${year}"></div></div>`
             } else {
-                this.days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i} <div class="point"></div></div>`;
+                this.days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i} <div class="point point_${i}_${month+1}_${year}"></div></div>`;
             } 
         }
     }
@@ -52,6 +52,13 @@ class Calendar {
         for (let i = 1; i <= nextDays; i++) {
             this.days += `<div class="calendar-box nextDate">${i}</div>`;
             monthDays.innerHTML = this.days;
+        }
+    }
+    displayPoint() {
+        let database = new Database();
+        let events = database.onGetEvents();
+        for(let i = 0; i < events.length; i++) {
+            helper.datePoint(events[i].date);
         }
     }
     displayYear() {
@@ -74,5 +81,6 @@ class Calendar {
         this.prevDate();
         this.daysMonth();
         this.nextDate();
+        this.displayPoint();
     }
 }

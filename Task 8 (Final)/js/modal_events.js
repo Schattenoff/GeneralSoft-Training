@@ -1,8 +1,7 @@
   let modalEvent = document.getElementById("myModalEvent");
+  let modalTitle = document.querySelector('.modal-titleEvent');
   let dayBtn = document.getElementById("dayBtn");
   let fnEvent = onLoadEvents();
-
-  let modalTitle = document.querySelector('.modal-titleEvent');
 
   function openModal(i, month, year) {
     modalEvent.style.display = "block";
@@ -48,11 +47,13 @@
 
   function onDeleteEvent(id) {
     let database = new Database();
+    let calendar = new Calendar();
     database.onDeleteEventUser(id);
     document.getElementsByClassName('container_events')[0].remove();
     document.getElementsByClassName('event_modal')[0].innerHTML += "<div class='container_events'></div>";
     fnEvent();
     closeConfirm();
+    calendar.renderCalendar();
   }
 
 

@@ -80,5 +80,12 @@ let helper = (function () {
                   }
                 });
         },
+        datePoint: function(date) {
+            let pointDay = String(date).slice(0,2);
+            let pointMonth = String(date).slice(3,5);
+            let pointYear = String(date).slice(6,10);
+            let pointDisplay = document.querySelector(`.point_${+pointDay}_${+pointMonth}_${pointYear}`);
+            pointDisplay.style.display = 'block';
+        }
     }
 })();

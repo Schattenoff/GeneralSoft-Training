@@ -21,7 +21,6 @@ let title = document.getElementById("title");
 let date = document.getElementById("date");
 let description = document.getElementById("description");
 let modalBtn = document.querySelector('.modalBtn');
-
 helper.dateInputMasked(date);
 
 function generateEvents(e) {
@@ -35,6 +34,8 @@ function generateEvents(e) {
     description: description.value
   };
   db.onAddEventUser(events);
+  let calendar = new Calendar();
+  calendar.renderCalendar();
   helper.message(true, "Event Add Complete!");
   title.value = "";
   date.value = "";
