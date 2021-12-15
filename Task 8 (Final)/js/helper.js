@@ -61,6 +61,11 @@ let helper = (function () {
             let dateFormat = /(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d/;
             return dateFormat.test(date);
         },
+        dateValueMasked: function() {
+            let date = document.getElementById("date");
+            date.value = "__.__.____";
+            date.setSelectionRange(0, 0);
+        },
         dateInputMasked: function(elm) {
                 elm.addEventListener('keypress', function(e) {
                   if(e.keyCode < 47 || e.keyCode > 57) {
@@ -84,7 +89,8 @@ let helper = (function () {
             let pointDay = String(date).slice(0,2);
             let pointMonth = String(date).slice(3,5);
             let pointYear = String(date).slice(6,10);
-            let pointDisplay = document.querySelector(`.point_${+pointDay}_${+pointMonth}_${pointYear}`);
+            let pointDisplay = document.getElementById(`point_${+pointDay}_${+pointMonth}_${pointYear}`);
+            // pointDisplay.style.display = 'none';
             pointDisplay.style.display = 'block';
         }
     }

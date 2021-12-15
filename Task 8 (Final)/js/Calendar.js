@@ -39,9 +39,9 @@ class Calendar {
         const lastDay = new Date(this.dt.getFullYear(), this.dt.getMonth() + 1, 0).getDate();
         for (let i = 1; i <= lastDay; i++) {
             if (i === new Date().getDate() && this.dt.getMonth() === new Date().getMonth() && this.dt.getFullYear() === new Date().getFullYear()) {
-                this.days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i} <div class="point point_${i}_${month+1}_${year}"></div></div>`
+                this.days += `<div class="calendar-box today" onclick="openModal(${i},${month+1},${year});">${i} <div class="point" id="point_${i}_${month+1}_${year}"></div></div>`
             } else {
-                this.days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i} <div class="point point_${i}_${month+1}_${year}"></div></div>`;
+                this.days += `<div class="calendar-box" onclick="openModal(${i},${month+1},${year});">${i} <div class="point" id="point_${i}_${month+1}_${year}"></div></div>`;
             } 
         }
     }
