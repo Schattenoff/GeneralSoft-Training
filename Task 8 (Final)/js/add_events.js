@@ -2,15 +2,15 @@ let addModal = document.getElementById("myModal");
 let addBtn = document.getElementById("openModal");
 let addSpan = document.getElementsByClassName("close")[0];
 
-addBtn.onclick = function() {
+addBtn.onclick = () => {
   addModal.style.display = "block";
 }
 
-addSpan.onclick = function() {
+addSpan.onclick = () => {
   addModal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = (event) => {
   if (event.target == addModal) {
     addModal.style.display = "none";
   }
