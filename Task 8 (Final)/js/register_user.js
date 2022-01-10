@@ -21,19 +21,18 @@ function userStorage(event) {
         'userName': userName.value,
         'regLogin': regLogin.value,  
         'regPass': regPass.value,
-        'events':[]
+        'events':[],
+        'auth': false,
     }
 
     let database = new Database();
     for (let i = 0; i < database.onGetLength(); i++) {
         if (database.onGetLogin(i) == regLogin.value) {
-            return helper.message(false, 'Email is Busy!');
+            helper.message(false, 'Email is Busy!');
         }
     }
-    
     database.onInsertIntoDatabase(users);
     helper.message(true, 'You have successfully registered!');
-    helper.link('sign-in.html');
 }
 
 

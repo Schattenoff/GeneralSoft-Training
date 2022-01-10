@@ -65,5 +65,12 @@ class Database {
     onGetInfoUser(id = this.onGetUserID()){
         return this.Database[id];
     }
+    onGetAuth(id = this.onGetUserID()) {
+        return this.Database[id].auth;
+    }
+    onSetAuth(auth) {
+        this.Database[this.onGetUserID()].auth = auth;
+        this.onSaveDatabase();
+    }
 }
 

@@ -50,6 +50,7 @@ let helper = (function () {
             if (login.value == email && pass.value == password) {
                 helper.message(true, 'You are successfully logged in!');
                 database.onSetUserID(id);
+                database.onSetAuth(true);
                 helper.link('index.html');
             }
             else if (login.value == email && pass.value != password) {
@@ -90,8 +91,11 @@ let helper = (function () {
             let pointMonth = String(date).slice(3,5);
             let pointYear = String(date).slice(6,10);
             let pointDisplay = document.getElementById(`point_${+pointDay}_${+pointMonth}_${pointYear}`);
-            // pointDisplay.style.display = 'none';
             pointDisplay.style.display = 'block';
-        }
+        },
+        logout: function() {
+            let db = new Database();
+            db.onSetAuth(false);
+        },
     }
 })();
